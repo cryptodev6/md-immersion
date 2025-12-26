@@ -1,0 +1,204 @@
+/* =========================
+  6) WHAT YOU GET (OVERVIEW)
+========================= */
+
+.what-you-get{
+  position: relative;
+  padding: clamp(64px, 8vw, 110px) 0;
+  background:
+    radial-gradient(1000px 480px at 20% -10%, rgba(212,175,55,.14), rgba(0,0,0,0) 55%),
+    radial-gradient(1000px 520px at 80% 0%, rgba(212,175,55,.10), rgba(0,0,0,0) 55%),
+    linear-gradient(180deg, rgba(8,8,10,1) 0%, rgba(6,6,8,1) 100%);
+  overflow: hidden;
+}
+
+.what-you-get__inner{
+  position: relative;
+  z-index: 2;
+}
+
+.what-you-get__header{
+  text-align: left;
+  max-width: 920px;
+  margin: 0 auto 34px auto;
+}
+
+.what-you-get__title{
+  margin: 10px 0 10px 0;
+  font-size: clamp(28px, 3vw, 44px);
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+}
+
+.what-you-get__lede{
+  margin: 12px 0 0 0;
+  font-size: clamp(16px, 1.25vw, 18px);
+  line-height: 1.75;
+  color: rgba(255,255,255,.82);
+}
+
+.what-you-get__cta{
+  margin-top: 18px;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+/* Grid */
+.what-you-get__grid{
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 14px;
+  margin-top: 26px;
+}
+
+/* Card */
+.get-card{
+  grid-column: span 6;
+  padding: 18px 18px 16px 18px;
+  border-radius: 18px;
+  background: rgba(255,255,255,.04);
+  border: 1px solid rgba(255,255,255,.08);
+  box-shadow:
+    0 10px 26px rgba(0,0,0,.35),
+    inset 0 1px 0 rgba(255,255,255,.06);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  transition: transform .18s ease, border-color .18s ease, background .18s ease;
+}
+
+.get-card:hover{
+  transform: translateY(-2px);
+  border-color: rgba(212,175,55,.28);
+  background: rgba(255,255,255,.05);
+}
+
+.get-card__top{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.get-card__title{
+  margin: 0;
+  font-size: 16px;
+  letter-spacing: .01em;
+}
+
+.get-card__text{
+  margin: 10px 0 0 0;
+  color: rgba(255,255,255,.80);
+  font-size: 14.5px;
+  line-height: 1.7;
+}
+
+/* Icon */
+.get-icon{
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  border-radius: 14px;
+  background: rgba(212,175,55,.10);
+  border: 1px solid rgba(212,175,55,.18);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.06);
+  flex: 0 0 auto;
+}
+
+.get-icon svg{
+  width: 22px;
+  height: 22px;
+  color: rgba(212,175,55,.95);
+}
+
+/* Featured card (2.0 upgrade) */
+.get-card--featured{
+  grid-column: span 12;
+  position: relative;
+  border-color: rgba(212,175,55,.34);
+  background:
+    radial-gradient(900px 220px at 20% 0%, rgba(212,175,55,.18), rgba(0,0,0,0) 55%),
+    rgba(255,255,255,.045);
+}
+
+.get-card--featured:hover{
+  border-color: rgba(212,175,55,.46);
+  background:
+    radial-gradient(900px 220px at 20% 0%, rgba(212,175,55,.22), rgba(0,0,0,0) 55%),
+    rgba(255,255,255,.055);
+}
+
+.get-card__tag{
+  margin: 12px 0 0 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  color: rgba(0,0,0,.88);
+  background: rgba(212,175,55,.95);
+  border-radius: 999px;
+  padding: 6px 10px;
+  font-weight: 700;
+  letter-spacing: .02em;
+  width: fit-content;
+}
+
+/* Footer */
+.what-you-get__foot{
+  margin-top: 22px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 14px;
+  align-items: center;
+}
+
+.what-you-get__foot-card{
+  padding: 16px 18px;
+  border-radius: 18px;
+  background: rgba(255,255,255,.035);
+  border: 1px solid rgba(255,255,255,.08);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.06);
+}
+
+.what-you-get__foot-title{
+  margin: 0;
+  font-weight: 800;
+  letter-spacing: .01em;
+}
+
+.what-you-get__foot-text{
+  margin: 6px 0 0 0;
+  color: rgba(255,255,255,.78);
+  line-height: 1.7;
+  font-size: 14px;
+}
+
+.what-you-get__foot-actions{
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+/* Responsive */
+@media (max-width: 980px){
+  .get-card{ grid-column: span 12; }
+  .what-you-get__foot{ grid-template-columns: 1fr; }
+  .what-you-get__foot-actions{ justify-content: flex-start; }
+}
+
+@media (max-width: 520px){
+  .get-card{
+    padding: 16px 16px 14px 16px;
+    border-radius: 16px;
+  }
+  .get-icon{
+    width: 40px;
+    height: 40px;
+    border-radius: 14px;
+  }
+  .get-icon svg{
+    width: 21px;
+    height: 21px;
+  }
+}
