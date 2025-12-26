@@ -54,6 +54,9 @@
   <link rel="stylesheet" href="assets/css/curriculum.css" />
   <link rel="stylesheet" href="assets/css/typical-week.css" />
   <link rel="stylesheet" href="assets/css/coaches.css" />
+  <link rel="stylesheet" href="assets/css/filters.css" />
+  <link rel="stylesheet" href="assets/css/faq.css" />
+  <link rel="stylesheet" href="assets/css/apply.css" />
 
   <!-- =========================
        Structured Data (JSON-LD)
@@ -1356,423 +1359,523 @@
     </section>
 
 
-<!-- =========================
-  11) A TYPICAL WEEK (SCHEDULE VISUAL)
-========================= -->
-<section class="schedule" id="schedule" aria-label="A typical week">
-  <div class="container schedule__inner">
+    <!-- =========================
+      11) A TYPICAL WEEK (SCHEDULE VISUAL)
+    ========================= -->
+    <section class="schedule" id="schedule" aria-label="A typical week">
+      <div class="container schedule__inner">
 
-    <header class="schedule__header">
-      <p class="kicker">
-        <span class="k-dot" aria-hidden="true"></span>
-        A Typical Week
-      </p>
-
-      <h2 class="schedule__title">
-        The rhythm that creates results:
-        <span class="gold"><strong>structure + reps + feedback</strong></span>
-      </h2>
-
-      <p class="schedule__lede">
-        You’re not guessing what to do each day. The schedule is engineered around execution —
-        with a consistent daily loop and specific nights reserved for elite venues and curated socials.
-      </p>
-
-      <div class="schedule__cta">
-        <a class="btn btn-primary" href="#apply">Apply for Medellín Immersion</a>
-        <a class="btn btn-secondary" href="#curriculum">See the 6-phase system</a>
-      </div>
-    </header>
-
-    <!-- Schedule Visual -->
-    <div class="schedule__grid" aria-label="Daily rhythm">
-      <article class="slot">
-        <div class="slot__top">
-          <div class="slot__icon" aria-hidden="true">
-            <!-- Sunrise -->
-            <svg viewBox="0 0 24 24" fill="none">
-              <path d="M6 18a6 6 0 0 1 12 0" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
-              <path d="M12 5V2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
-              <path d="M4 12H2M22 12h-2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" opacity=".9"/>
-              <path d="M5 7 3.6 5.6M19 7l1.4-1.4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" opacity=".9"/>
-              <path d="M3 18h18" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" opacity=".8"/>
-            </svg>
-          </div>
-          <h3 class="slot__title">Morning</h3>
-          <span class="slot__time">Fitness + Prep</span>
-        </div>
-        <p class="slot__text">
-          Energy and presence first. Train your physique, clean your mind, and lock the day’s objective
-          before you step into the field.
-        </p>
-        <ul class="slot__bullets">
-          <li>Fitness / routine (energy + recovery)</li>
-          <li>Mindset & standards check</li>
-          <li>Briefing: what you’ll execute today</li>
-        </ul>
-      </article>
-
-      <article class="slot">
-        <div class="slot__top">
-          <div class="slot__icon" aria-hidden="true">
-            <!-- Sun -->
-            <svg viewBox="0 0 24 24" fill="none">
-              <path d="M12 18a6 6 0 1 0-6-6 6 6 0 0 0 6 6Z" stroke="currentColor" stroke-width="1.6"/>
-              <path d="M12 2v2M12 20v2M4 12H2M22 12h-2M5 5l1.4 1.4M17.6 17.6 19 19M19 5l-1.4 1.4M5 19l1.4-1.4"
-                stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
-            </svg>
-          </div>
-          <h3 class="slot__title">Afternoon</h3>
-          <span class="slot__time">Daygame Execution</span>
-        </div>
-        <p class="slot__text">
-          High-volume reps in real environments. You approach, lead, and calibrate — then repeat.
-          Confidence becomes normal through volume and feedback.
-        </p>
-        <ul class="slot__bullets">
-          <li>Approach reps + momentum</li>
-          <li>Conversation leadership & attraction</li>
-          <li>Calibrated corrections in real time</li>
-        </ul>
-      </article>
-
-      <article class="slot">
-        <div class="slot__top">
-          <div class="slot__icon" aria-hidden="true">
-            <!-- Screen -->
-            <svg viewBox="0 0 24 24" fill="none">
-              <path d="M4 5h16a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2Z"
-                stroke="currentColor" stroke-width="1.6"/>
-              <path d="M8 22h8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
-              <path d="M12 18v4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
-            </svg>
-          </div>
-          <h3 class="slot__title">Evening</h3>
-          <span class="slot__time">Debrief + Online Game</span>
-        </div>
-        <p class="slot__text">
-          This is where growth locks in. We review the day, correct patterns, and build your online funnel
-          so you’re creating options beyond the streets.
-        </p>
-        <ul class="slot__bullets">
-          <li>Debrief: what worked / what didn’t</li>
-          <li>Messaging flows + logistics planning</li>
-          <li>Profile optimization (Tinder/IG)</li>
-        </ul>
-      </article>
-
-      <article class="slot slot--night">
-        <div class="slot__top">
-          <div class="slot__icon" aria-hidden="true">
-            <!-- Moon -->
-            <svg viewBox="0 0 24 24" fill="none">
-              <path d="M21 13.5A8.5 8.5 0 0 1 10.5 3 7 7 0 1 0 21 13.5Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
-            </svg>
-          </div>
-          <h3 class="slot__title">Night</h3>
-          <span class="slot__time">Elite Venues (Certain Days)</span>
-        </div>
-        <p class="slot__text">
-          Nightgame runs on selected nights to keep performance high.
-          You train social dynamics, groups, and leadership in high-energy rooms — with structure.
-        </p>
-        <ul class="slot__bullets">
-          <li>Venue navigation & positioning</li>
-          <li>Group dynamics + social leadership</li>
-          <li>Escalation under real pressure</li>
-        </ul>
-        <p class="slot__hint">
-          <strong>Note:</strong> Nights are scheduled strategically to preserve energy and maximize results.
-        </p>
-      </article>
-
-      <article class="slot slot--featured">
-        <div class="slot__top">
-          <div class="slot__icon" aria-hidden="true">
-            <!-- Spark / network -->
-            <svg viewBox="0 0 24 24" fill="none">
-              <path d="M12 2l1.2 4.4L18 8l-4.8 1.6L12 14l-1.2-4.4L6 8l4.8-1.6L12 2Z"
-                stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
-              <path d="M7 15.5c2.2 1.8 7.8 1.8 10 0" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" opacity=".85"/>
-              <path d="M9 18.5c1.4 1 4.6 1 6 0" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" opacity=".7"/>
-            </svg>
-          </div>
-          <h3 class="slot__title">Social Momentum</h3>
-          <span class="slot__time">Parties / Curated Socials</span>
-        </div>
-        <p class="slot__text">
-          Social circle isn’t optional — it’s leverage. Curated socials are used as training environments:
-          integration, hosting, invitations, and becoming the connector.
-        </p>
-        <ul class="slot__bullets">
-          <li>Hosting & social leadership</li>
-          <li>Network building that compounds</li>
-          <li>Higher-standard rooms & invitations</li>
-        </ul>
-        <div class="slot__tag">2.0 Upgrade</div>
-      </article>
-    </div>
-
-    <!-- Weekly strip (optional visual) -->
-    <div class="schedule__week" aria-label="Weekly cadence">
-      <div class="week-card">
-        <p class="week-card__title">Weekly Cadence</p>
-        <p class="week-card__text">
-          Most days follow the same execution rhythm. Selected nights and curated socials are scheduled
-          strategically — especially during <span class="gold"><strong>Feria de las Flores</strong></span> and
-          <span class="gold"><strong>Colombiamoda</strong></span> — to maximize momentum and keep performance high.
-        </p>
-      </div>
-
-      <div class="week-actions">
-        <a class="btn btn-primary" href="#apply">Apply Now</a>
-        <a class="btn btn-secondary" href="#mansion">See the base</a>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-
-<!-- =========================
-  12) COACHES & LEADERSHIP (AUTHORITY)
-========================= -->
-<section class="coaches" id="coaches" aria-label="Coaches and leadership">
-  <div class="container coaches__inner">
-
-    <header class="coaches__header">
-      <p class="kicker">
-        <span class="k-dot" aria-hidden="true"></span>
-        Coaches & Leadership
-      </p>
-
-      <h2 class="coaches__title">
-        Led by experience.
-        Built on <span class="gold"><strong>field results since 2016.</strong></span>
-      </h2>
-
-      <p class="coaches__lede">
-        Medellín Immersion isn’t run by “content creators.”
-        It’s led by coaches who live this in the real world — with a direct, honest,
-        field-based philosophy that produces change fast.
-      </p>
-    </header>
-
-    <!-- Coaches Grid -->
-    <div class="coaches__grid" role="list" aria-label="Coaching team">
-
-      <!-- Yoshi -->
-      <article class="coach-card coach-card--featured" role="listitem">
-        <div class="coach-card__top">
-          <div class="coach-avatar">
-            <img src="assets/images/coaches/yoshi.jpg" alt="Yoshi — Founder of Seducción Perú" loading="lazy">
-          </div>
-
-          <div class="coach-head">
-            <h3 class="coach-name">Yoshi</h3>
-            <p class="coach-role">
-              Founder, <span class="gold"><strong>Seducción Perú</strong></span> • Medellín Immersion Lead • Since 2016
-            </p>
-          </div>
-
-          <div class="coach-badge" aria-label="Since 2016 badge">
-            Since 2016
-          </div>
-        </div>
-
-        <div class="coach-body">
-          <p class="coach-text">
-            Yoshi built Seducción Perú and has led Medellín Immersions for years.
-            This program is not an experiment — it’s a <span class="gold"><strong>field-tested system</strong></span>
-            refined through real cohorts, real environments, and real outcomes.
+        <header class="schedule__header">
+          <p class="kicker">
+            <span class="k-dot" aria-hidden="true"></span>
+            A Typical Week
           </p>
 
-          <div class="coach-quote">
-            <p>
-              <strong>“We don’t sell motivation. We build men through execution.”</strong><br>
-              Brief → Execute → Debrief. Every day. In real environments.
-            </p>
-          </div>
+          <h2 class="schedule__title">
+            The rhythm that creates results:
+            <span class="gold"><strong>structure + reps + feedback</strong></span>
+          </h2>
 
-          <ul class="coach-points" aria-label="Yoshi highlights">
-            <li>System built through repeated cohorts since 2016</li>
-            <li>Direct coaching style: honest, corrective, results-driven</li>
-            <li>High standards: environment, behavior, and performance</li>
-          </ul>
-        </div>
-      </article>
-
-      <!-- Kevin -->
-      <article class="coach-card" role="listitem">
-        <div class="coach-card__top">
-          <div class="coach-avatar">
-            <img src="assets/images/coaches/kevin.jpg" alt="Kevin — Daygame Specialist" loading="lazy">
-          </div>
-
-          <div class="coach-head">
-            <h3 class="coach-name">Kevin</h3>
-            <p class="coach-role">Daygame Specialist • Execution & Calibration</p>
-          </div>
-        </div>
-
-        <div class="coach-body">
-          <p class="coach-text">
-            Kevin specializes in daygame execution: approach mechanics, conversation leadership,
-            and the calibration that turns reps into real confidence.
-            The goal is simple — <strong>approach becomes normal</strong>.
+          <p class="schedule__lede">
+            You’re not guessing what to do each day. The schedule is engineered around execution —
+            with a consistent daily loop and specific nights reserved for elite venues and curated socials.
           </p>
 
-          <ul class="coach-points" aria-label="Kevin focus">
-            <li>High-volume reps with structured drills</li>
-            <li>Real-time correction: posture, voice, timing, intent</li>
-            <li>Momentum building: from hesitation to consistency</li>
-          </ul>
-        </div>
-      </article>
-
-      <!-- Miguel D (placeholder for your pseudonym) -->
-      <article class="coach-card coach-card--gold" role="listitem">
-        <div class="coach-card__top">
-          <div class="coach-avatar">
-            <img src="assets/images/coaches/miguel-d.jpg" alt="Miguel D — Social Circle Specialist" loading="lazy">
+          <div class="schedule__cta">
+            <a class="btn btn-primary" href="#apply">Apply for Medellín Immersion</a>
+            <a class="btn btn-secondary" href="#curriculum">See the 6-phase system</a>
           </div>
+        </header>
 
-          <div class="coach-head">
-            <h3 class="coach-name">Miguel D</h3>
-            <p class="coach-role">
-              Social Circle Specialist • Hosting, Access & Leverage
-              <span class="coach-tag">2.0</span>
+        <!-- Schedule Visual -->
+        <div class="schedule__grid" aria-label="Daily rhythm">
+          <article class="slot">
+            <div class="slot__top">
+              <div class="slot__icon" aria-hidden="true">
+                <!-- Sunrise -->
+                <svg viewBox="0 0 24 24" fill="none">
+                  <path d="M6 18a6 6 0 0 1 12 0" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+                  <path d="M12 5V2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+                  <path d="M4 12H2M22 12h-2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" opacity=".9"/>
+                  <path d="M5 7 3.6 5.6M19 7l1.4-1.4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" opacity=".9"/>
+                  <path d="M3 18h18" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" opacity=".8"/>
+                </svg>
+              </div>
+              <h3 class="slot__title">Morning</h3>
+              <span class="slot__time">Fitness + Prep</span>
+            </div>
+            <p class="slot__text">
+              Energy and presence first. Train your physique, clean your mind, and lock the day’s objective
+              before you step into the field.
             </p>
-          </div>
-        </div>
-
-        <div class="coach-body">
-          <p class="coach-text">
-            Social circle is leverage. Miguel D focuses on the 2.0 upgrade:
-            building connections, integrating into groups, hosting, and becoming
-            <span class="gold"><strong>the node</strong></span> people naturally orbit around.
-          </p>
-
-          <ul class="coach-points" aria-label="Miguel focus">
-            <li>Integration: entering groups naturally and cleanly</li>
-            <li>Hosting & invitations: building momentum through social proof</li>
-            <li>Becoming the connector: access that compounds</li>
-          </ul>
-        </div>
-      </article>
-
-    </div>
-
-    <!-- Coaching Philosophy + Standards -->
-    <div class="coaches__bottom" aria-label="Coaching philosophy and standards">
-
-      <div class="philosophy glass-card">
-        <h3 class="philosophy__title">Coaching philosophy</h3>
-        <p class="philosophy__text">
-          We coach in the field — not from a classroom. The style is direct, honest, and corrective.
-          You’ll get real feedback, real standards, and real expectations.
-        </p>
-
-        <div class="philosophy__pill">
-          <strong>Brief → Execute → Debrief</strong>
-          <span class="philosophy__pill-sub">No fluff. No coping. Just reps + calibration.</span>
-        </div>
-      </div>
-
-      <div class="standards glass-card">
-        <h3 class="standards__title">Standards (who it’s for / who it’s not)</h3>
-
-        <div class="standards__cols">
-          <div class="standards__col">
-            <p class="standards__label">This is for you if:</p>
-            <ul class="standards__list">
-              <li>You want real-world results, not theory</li>
-              <li>You can execute daily and follow structure</li>
-              <li>You respect high standards and professional behavior</li>
-              <li>You want a lifestyle-level transformation</li>
+            <ul class="slot__bullets">
+              <li>Fitness / routine (energy + recovery)</li>
+              <li>Mindset & standards check</li>
+              <li>Briefing: what you’ll execute today</li>
             </ul>
-          </div>
+          </article>
 
-          <div class="standards__col">
-            <p class="standards__label">This is not for you if:</p>
-            <ul class="standards__list standards__list--muted">
-              <li>You want shortcuts or “magic lines”</li>
-              <li>You can’t handle honest feedback</li>
-              <li>You’re looking for a party trip with no discipline</li>
-              <li>You won’t respect boundaries, ethics, and standards</li>
+          <article class="slot">
+            <div class="slot__top">
+              <div class="slot__icon" aria-hidden="true">
+                <!-- Sun -->
+                <svg viewBox="0 0 24 24" fill="none">
+                  <path d="M12 18a6 6 0 1 0-6-6 6 6 0 0 0 6 6Z" stroke="currentColor" stroke-width="1.6"/>
+                  <path d="M12 2v2M12 20v2M4 12H2M22 12h-2M5 5l1.4 1.4M17.6 17.6 19 19M19 5l-1.4 1.4M5 19l1.4-1.4"
+                    stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <h3 class="slot__title">Afternoon</h3>
+              <span class="slot__time">Daygame Execution</span>
+            </div>
+            <p class="slot__text">
+              High-volume reps in real environments. You approach, lead, and calibrate — then repeat.
+              Confidence becomes normal through volume and feedback.
+            </p>
+            <ul class="slot__bullets">
+              <li>Approach reps + momentum</li>
+              <li>Conversation leadership & attraction</li>
+              <li>Calibrated corrections in real time</li>
             </ul>
+          </article>
+
+          <article class="slot">
+            <div class="slot__top">
+              <div class="slot__icon" aria-hidden="true">
+                <!-- Screen -->
+                <svg viewBox="0 0 24 24" fill="none">
+                  <path d="M4 5h16a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2Z"
+                    stroke="currentColor" stroke-width="1.6"/>
+                  <path d="M8 22h8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+                  <path d="M12 18v4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <h3 class="slot__title">Evening</h3>
+              <span class="slot__time">Debrief + Online Game</span>
+            </div>
+            <p class="slot__text">
+              This is where growth locks in. We review the day, correct patterns, and build your online funnel
+              so you’re creating options beyond the streets.
+            </p>
+            <ul class="slot__bullets">
+              <li>Debrief: what worked / what didn’t</li>
+              <li>Messaging flows + logistics planning</li>
+              <li>Profile optimization (Tinder/IG)</li>
+            </ul>
+          </article>
+
+          <article class="slot slot--night">
+            <div class="slot__top">
+              <div class="slot__icon" aria-hidden="true">
+                <!-- Moon -->
+                <svg viewBox="0 0 24 24" fill="none">
+                  <path d="M21 13.5A8.5 8.5 0 0 1 10.5 3 7 7 0 1 0 21 13.5Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <h3 class="slot__title">Night</h3>
+              <span class="slot__time">Elite Venues (Certain Days)</span>
+            </div>
+            <p class="slot__text">
+              Nightgame runs on selected nights to keep performance high.
+              You train social dynamics, groups, and leadership in high-energy rooms — with structure.
+            </p>
+            <ul class="slot__bullets">
+              <li>Venue navigation & positioning</li>
+              <li>Group dynamics + social leadership</li>
+              <li>Escalation under real pressure</li>
+            </ul>
+            <p class="slot__hint">
+              <strong>Note:</strong> Nights are scheduled strategically to preserve energy and maximize results.
+            </p>
+          </article>
+
+          <article class="slot slot--featured">
+            <div class="slot__top">
+              <div class="slot__icon" aria-hidden="true">
+                <!-- Spark / network -->
+                <svg viewBox="0 0 24 24" fill="none">
+                  <path d="M12 2l1.2 4.4L18 8l-4.8 1.6L12 14l-1.2-4.4L6 8l4.8-1.6L12 2Z"
+                    stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+                  <path d="M7 15.5c2.2 1.8 7.8 1.8 10 0" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" opacity=".85"/>
+                  <path d="M9 18.5c1.4 1 4.6 1 6 0" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" opacity=".7"/>
+                </svg>
+              </div>
+              <h3 class="slot__title">Social Momentum</h3>
+              <span class="slot__time">Parties / Curated Socials</span>
+            </div>
+            <p class="slot__text">
+              Social circle isn’t optional — it’s leverage. Curated socials are used as training environments:
+              integration, hosting, invitations, and becoming the connector.
+            </p>
+            <ul class="slot__bullets">
+              <li>Hosting & social leadership</li>
+              <li>Network building that compounds</li>
+              <li>Higher-standard rooms & invitations</li>
+            </ul>
+            <div class="slot__tag">2.0 Upgrade</div>
+          </article>
+        </div>
+
+        <!-- Weekly strip (optional visual) -->
+        <div class="schedule__week" aria-label="Weekly cadence">
+          <div class="week-card">
+            <p class="week-card__title">Weekly Cadence</p>
+            <p class="week-card__text">
+              Most days follow the same execution rhythm. Selected nights and curated socials are scheduled
+              strategically — especially during <span class="gold"><strong>Feria de las Flores</strong></span> and
+              <span class="gold"><strong>Colombiamoda</strong></span> — to maximize momentum and keep performance high.
+            </p>
+          </div>
+
+          <div class="week-actions">
+            <a class="btn btn-primary" href="#apply">Apply Now</a>
+            <a class="btn btn-secondary" href="#mansion">See the base</a>
           </div>
         </div>
 
-        <div class="standards__cta">
-          <a class="btn btn-primary" href="#apply">Apply Now</a>
-          <a class="btn btn-secondary" href="#faq">Read FAQs</a>
-        </div>
       </div>
-
-    </div>
-
-  </div>
-</section>
-
-
+    </section>
 
 
     <!-- =========================
-         Pricing / Options
-    ========================== -->
-    <section class="pricing" id="pricing" aria-label="Program options and pricing">
-      <div class="container">
-        <header class="section-header">
-          <h2>Options</h2>
-          <p>Premium coaching immersion. Limited Spots. Apply first — pricing comes after fit.</p>
+      12) COACHES & LEADERSHIP (AUTHORITY)
+    ========================= -->
+    <section class="coaches" id="coaches" aria-label="Coaches and leadership">
+      <div class="container coaches__inner">
+
+        <header class="coaches__header">
+          <p class="kicker">
+            <span class="k-dot" aria-hidden="true"></span>
+            Coaches & Leadership
+          </p>
+
+          <h2 class="coaches__title">
+            Led by experience.
+            Built on <span class="gold"><strong>field results since 2016.</strong></span>
+          </h2>
+
+          <p class="coaches__lede">
+            Medellín Immersion isn’t run by “content creators.”
+            It’s led by coaches who live this in the real world — with a direct, honest,
+            field-based philosophy that produces change fast.
+          </p>
         </header>
 
-        <div class="pricing-grid">
-          <article class="price-card">
-            <h3>7 Days</h3>
-            <p class="price">$3,000</p>
-            <p class="price-sub">Intensive reset & execution week.</p>
-            <ul class="checklist">
-              <li>Daily coaching loop</li>
-              <li>Daygame + selected nights</li>
-              <li>Social circle fundamentals</li>
-              <li>Fitness & presence basics</li>
-            </ul>
-            <a class="btn btn-primary btn-block" href="#apply">Apply</a>
+        <!-- Coaches Grid -->
+        <div class="coaches__grid" role="list" aria-label="Coaching team">
+
+          <!-- Yoshi -->
+          <article class="coach-card coach-card--featured" role="listitem">
+            <div class="coach-card__top">
+              <div class="coach-avatar">
+                <img src="assets/images/coaches/yoshi.jpg" alt="Yoshi — Founder of Seducción Perú" loading="lazy">
+              </div>
+
+              <div class="coach-head">
+                <h3 class="coach-name">Yoshi</h3>
+                <p class="coach-role">
+                  Founder, <span class="gold"><strong>Seducción Perú</strong></span> • Medellín Immersion Lead • Since 2016
+                </p>
+              </div>
+
+              <div class="coach-badge" aria-label="Since 2016 badge">
+                Since 2016
+              </div>
+            </div>
+
+            <div class="coach-body">
+              <p class="coach-text">
+                Yoshi built Seducción Perú and has led Medellín Immersions for years.
+                This program is not an experiment — it’s a <span class="gold"><strong>field-tested system</strong></span>
+                refined through real cohorts, real environments, and real outcomes.
+              </p>
+
+              <div class="coach-quote">
+                <p>
+                  <strong>“We don’t sell motivation. We build men through execution.”</strong><br>
+                  Brief → Execute → Debrief. Every day. In real environments.
+                </p>
+              </div>
+
+              <ul class="coach-points" aria-label="Yoshi highlights">
+                <li>System built through repeated cohorts since 2016</li>
+                <li>Direct coaching style: honest, corrective, results-driven</li>
+                <li>High standards: environment, behavior, and performance</li>
+              </ul>
+            </div>
           </article>
 
-          <article class="price-card featured" aria-label="Most popular option">
-            <div class="tag">Most Popular</div>
-            <h3>14 Days</h3>
-            <p class="price">$5,000</p>
-            <p class="price-sub">More reps. Deeper calibration. Stronger identity shift.</p>
-            <ul class="checklist">
-              <li>Everything in 7 Days</li>
-              <li>More field execution blocks</li>
-              <li>Advanced social circle work</li>
-              <li>Online game conversion system</li>
-            </ul>
-            <a class="btn btn-primary btn-block" href="#apply">Apply</a>
+          <!-- Kevin -->
+          <article class="coach-card" role="listitem">
+            <div class="coach-card__top">
+              <div class="coach-avatar">
+                <img src="assets/images/coaches/kevin.jpg" alt="Kevin — Daygame Specialist" loading="lazy">
+              </div>
+
+              <div class="coach-head">
+                <h3 class="coach-name">Kevin</h3>
+                <p class="coach-role">Daygame Specialist • Execution & Calibration</p>
+              </div>
+            </div>
+
+            <div class="coach-body">
+              <p class="coach-text">
+                Kevin specializes in daygame execution: approach mechanics, conversation leadership,
+                and the calibration that turns reps into real confidence.
+                The goal is simple — <strong>approach becomes normal</strong>.
+              </p>
+
+              <ul class="coach-points" aria-label="Kevin focus">
+                <li>High-volume reps with structured drills</li>
+                <li>Real-time correction: posture, voice, timing, intent</li>
+                <li>Momentum building: from hesitation to consistency</li>
+              </ul>
+            </div>
           </article>
 
-          <article class="price-card">
-            <h3>1 Month</h3>
-            <p class="price">$7,500</p>
-            <p class="price-sub">Full lifestyle rebuild. Highest transformation potential.</p>
-            <ul class="checklist">
-              <li>Deep reps + leadership training</li>
-              <li>Social circle & hosting</li>
-              <li>Fitness protocol + discipline</li>
-              <li>Advanced online-to-offline system</li>
-            </ul>
-            <a class="btn btn-primary btn-block" href="#apply">Apply</a>
+          <!-- Miguel  (placeholder for your pseudonym) -->
+          <article class="coach-card coach-card--gold" role="listitem">
+            <div class="coach-card__top">
+              <div class="coach-avatar">
+                <img src="assets/images/coaches/miguel-d.jpg" alt="Miguel D — Social Circle Specialist" loading="lazy">
+              </div>
+
+              <div class="coach-head">
+                <h3 class="coach-name">Miguel</h3>
+                <p class="coach-role">
+                  Social Circle Specialist • Hosting, Access & Leverage
+                  <span class="coach-tag">2.0</span>
+                </p>
+              </div>
+            </div>
+
+            <div class="coach-body">
+              <p class="coach-text">
+                Social circle is leverage. Miguel D focuses on the 2.0 upgrade:
+                building connections, integrating into groups, hosting, and becoming
+                <span class="gold"><strong>the node</strong></span> people naturally orbit around.
+              </p>
+
+              <ul class="coach-points" aria-label="Miguel focus">
+                <li>Integration: entering groups naturally and cleanly</li>
+                <li>Hosting & invitations: building momentum through social proof</li>
+                <li>Becoming the connector: access that compounds</li>
+              </ul>
+            </div>
           </article>
+
         </div>
 
-        <p class="pricing-note">
-          <strong>Note:</strong> Travel, personal expenses, and optional add-ons are not included unless specified.
-        </p>
+        <!-- Coaching Philosophy + Standards -->
+        <div class="coaches__bottom" aria-label="Coaching philosophy and standards">
+
+          <div class="philosophy glass-card">
+            <h3 class="philosophy__title">Coaching philosophy</h3>
+            <p class="philosophy__text">
+              We coach in the field — not from a classroom. The style is direct, honest, and corrective.
+              You’ll get real feedback, real standards, and real expectations.
+            </p>
+
+            <div class="philosophy__pill">
+              <strong>Brief → Execute → Debrief</strong>
+              <span class="philosophy__pill-sub">No fluff. No coping. Just reps + calibration.</span>
+            </div>
+          </div>
+
+          <div class="standards glass-card">
+            <h3 class="standards__title">Standards (who it’s for / who it’s not)</h3>
+
+            <div class="standards__cols">
+              <div class="standards__col">
+                <p class="standards__label">This is for you if:</p>
+                <ul class="standards__list">
+                  <li>You want real-world results, not theory</li>
+                  <li>You can execute daily and follow structure</li>
+                  <li>You respect high standards and professional behavior</li>
+                  <li>You want a lifestyle-level transformation</li>
+                </ul>
+              </div>
+
+              <div class="standards__col">
+                <p class="standards__label">This is not for you if:</p>
+                <ul class="standards__list standards__list--muted">
+                  <li>You want shortcuts or “magic lines”</li>
+                  <li>You can’t handle honest feedback</li>
+                  <li>You’re looking for a party trip with no discipline</li>
+                  <li>You won’t respect boundaries, ethics, and standards</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="standards__cta">
+              <a class="btn btn-primary" href="#apply">Apply Now</a>
+              <a class="btn btn-secondary" href="#faq">Read FAQs</a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- =========================
+      13) WHO THIS IS FOR / NOT FOR
+    ========================= -->
+    <section class="filters" id="filters" aria-label="Who this is for">
+      <div class="container filters__inner">
+
+        <header class="filters__header">
+          <p class="kicker">
+            <span class="k-dot" aria-hidden="true"></span>
+            Fit & Standards
+          </p>
+
+          <h2 class="filters__title">
+            Built for the right men.
+            <span class="gold"><strong>Filtered by design.</strong></span>
+          </h2>
+        </header>
+
+        <div class="filters__grid" aria-label="Who it’s for and who it’s not">
+
+          <!-- FOR -->
+          <div class="filter-card filter-card--for">
+            <h3 class="filter-card__title">This is for you if:</h3>
+            <ul class="filter-list">
+              <li>You want a <strong>real transformation</strong>, not surface-level tips</li>
+              <li>You can execute daily and follow structure</li>
+              <li>You value discipline, standards, and honest feedback</li>
+              <li>You want social skill that transfers back home</li>
+            </ul>
+          </div>
+
+          <!-- NOT FOR -->
+          <div class="filter-card filter-card--not">
+            <h3 class="filter-card__title">This is not for you if:</h3>
+            <ul class="filter-list">
+              <li>You’re looking for a vacation or “party-only” experience</li>
+              <li>You want shortcuts, scripts, or quick fixes</li>
+              <li>You’re expecting anything transactional or artificial</li>
+              <li>You don’t respect boundaries, ethics, or structure</li>
+            </ul>
+          </div>
+
+        </div>
+
+        <div class="filters__cta">
+          <a class="btn btn-primary" href="#apply">Apply Now</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================
+      15) PACKAGES & OPTIONS
+    ========================= -->
+    <section class="packages" id="packages" aria-label="Packages and options">
+      <div class="container packages__inner">
+
+        <header class="packages__header">
+          <p class="kicker">
+            <span class="k-dot" aria-hidden="true"></span>
+            Packages
+          </p>
+
+          <h2 class="packages__title">
+            Choose the level of immersion.
+            <span class="gold"><strong>Same system. Different depth.</strong></span>
+          </h2>
+
+          <p class="packages__lede">
+            Both options are built on the same proven Medellín Immersion system.
+            The difference is time, depth, and how deeply the transformation locks in.
+          </p>
+        </header>
+
+        <!-- Packages Grid -->
+        <div class="packages__grid" aria-label="Available packages">
+
+          <!-- 14 DAYS -->
+          <article class="package-card">
+            <header class="package-card__header">
+              <h3 class="package-card__title">14-Day Immersion</h3>
+              <p class="package-card__subtitle">Intensive · High-impact · Fast calibration</p>
+            </header>
+
+            <div class="package-card__price">
+              <span class="price">$3,000</span>
+              <span class="price-note">USD</span>
+            </div>
+
+            <p class="package-card__description">
+              Designed for men who want a powerful reset and fast skill acquisition.
+              You get full access to the system, compressed into two intense weeks.
+            </p>
+
+            <ul class="package-list">
+              <li>14 days of full immersion in Medellín</li>
+              <li>VIP mansion / penthouse base in El Poblado</li>
+              <li>Daily <strong>daygame execution</strong> + coaching</li>
+              <li>Nightgame sessions (selected nights)</li>
+              <li>Online game setup & messaging frameworks</li>
+              <li>Daily debriefs and feedback loops</li>
+              <li>Access to curated socials during the stay</li>
+            </ul>
+
+            <p class="package-note">
+              Best for: focused men with limited time who still want real execution.
+            </p>
+
+            <div class="package-card__cta">
+              <a class="btn btn-primary" href="#apply">Apply Now</a>
+              <a class="btn btn-secondary" href="#whatsapp">WhatsApp for details</a>
+            </div>
+          </article>
+
+          <!-- 30 DAYS -->
+          <article class="package-card package-card--featured">
+            <header class="package-card__header">
+              <h3 class="package-card__title">30-Day Immersion</h3>
+              <p class="package-card__subtitle">Core Program · Full transformation</p>
+              <span class="package-badge">Recommended</span>
+            </header>
+
+            <div class="package-card__price">
+              <span class="price">$5,000</span>
+              <span class="price-note">USD</span>
+            </div>
+
+            <p class="package-card__description">
+              The flagship experience. This is where habits change, confidence stabilizes,
+              and social skill becomes part of who you are — not something you “try.”
+            </p>
+
+            <ul class="package-list">
+              <li>30 days of full immersion in Medellín</li>
+              <li>VIP mansion / penthouse base in El Poblado</li>
+              <li>Complete <strong>6-phase curriculum</strong></li>
+              <li>Daily daygame execution + calibration</li>
+              <li>Nightgame & elite venues (structured nights)</li>
+              <li>Online game system + profile optimization</li>
+              <li>Dates, logistics & consistency training</li>
+              <li><strong>Social Circle Mastery (2.0 upgrade)</strong></li>
+              <li>Curated parties & high-level social access</li>
+              <li>Daily debriefs + ongoing correction</li>
+            </ul>
+
+            <p class="package-note">
+              Best for: men who want the full lifestyle-level transformation.
+            </p>
+
+            <div class="package-card__cta">
+              <a class="btn btn-primary" href="#apply">Apply Now</a>
+              <a class="btn btn-secondary" href="#whatsapp">WhatsApp for details</a>
+            </div>
+          </article>
+
+        </div>
+
       </div>
     </section>
 
@@ -1866,79 +1969,191 @@
     </section>
 
     <!-- =========================
-         FAQ
-    ========================== -->
+      16) FAQ (CONVERSION-SAVING)
+    ========================= -->
     <section class="faq" id="faq" aria-label="Frequently asked questions">
-      <div class="container">
-        <header class="section-header">
-          <h2>FAQ</h2>
-          <p>Direct, clear answers. (We’ll refine copy later.)</p>
+      <div class="container faq__inner">
+
+        <header class="faq__header">
+          <p class="kicker">
+            <span class="k-dot" aria-hidden="true"></span>
+            FAQ
+          </p>
+
+          <h2 class="faq__title">
+            Common questions.
+            <span class="gold"><strong>Clear answers.</strong></span>
+          </h2>
+
+          <p class="faq__lede">
+            These are the questions we get most before men apply.
+            If something isn’t answered here, you can always reach out after your application.
+          </p>
         </header>
 
-        <div class="faq-list" role="list">
-          <details class="faq-item">
-            <summary>Is this “tourism”?</summary>
-            <div class="faq-content">
+        <!-- FAQ List -->
+        <div class="faq__list" aria-label="FAQ items">
+
+          <details class="faq-item" open>
+            <summary class="faq-question">
+              Do I need experience with women?
+            </summary>
+            <div class="faq-answer">
               <p>
-                No. This is a structured coaching immersion focused on social competence, personal growth, fitness, and lifestyle.
-                We maintain strict standards and respectful conduct policies.
+                No. You don’t need prior experience.
+                The immersion is structured to meet you where you are —
+                from fundamentals to execution — with daily coaching and calibration.
+              </p>
+              <p>
+                What matters is your ability to <strong>show up, execute, and follow structure</strong>.
               </p>
             </div>
           </details>
 
           <details class="faq-item">
-            <summary>Do you provide accommodation?</summary>
-            <div class="faq-content">
+            <summary class="faq-question">
+              How safe is Medellín?
+            </summary>
+            <div class="faq-answer">
               <p>
-                The immersion is based at  as HQ. Accommodation specifics depend on your package and availability.
-                (Replace with final policy later.)
+                Medellín is a large, modern city with very safe zones when you move correctly.
+                The immersion is run with <strong>structured logistics</strong>, curated venues,
+                and professional standards — no random or sketchy situations.
+              </p>
+              <p>
+                You’ll be based in <span class="gold"><strong>El Poblado</strong></span> and move through
+                high-quality environments selected for safety, logistics, and social flow.
               </p>
             </div>
           </details>
 
           <details class="faq-item">
-            <summary>What happens after I apply?</summary>
-            <div class="faq-content">
+            <summary class="faq-question">
+              What does a typical day look like?
+            </summary>
+            <div class="faq-answer">
               <p>
-                We review fit. If approved, we share onboarding details, logistics, and the next steps to secure your spot.
+                Most days follow a consistent rhythm:
+                <strong>morning prep & fitness</strong>,
+                <strong>afternoon daygame execution</strong>,
+                <strong>evening debrief + online game</strong>.
+              </p>
+              <p>
+                Nightgame and curated socials are scheduled on selected days to maximize performance.
+                You can see the full breakdown in the <a href="#schedule">Typical Week</a> section.
               </p>
             </div>
           </details>
 
           <details class="faq-item">
-            <summary>Is there a refund policy?</summary>
-            <div class="faq-content">
+            <summary class="faq-question">
+              How many students are in each immersion?
+            </summary>
+            <div class="faq-answer">
               <p>
-                Add your final policy here. Keep it simple, premium, and clear.
+                Cohorts are kept <strong>intentionally small</strong>.
+                This protects the environment, allows real coaching,
+                and ensures you’re not lost in a crowd.
+              </p>
+              <p>
+                Quality of execution > quantity of students.
               </p>
             </div>
           </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">
+              What’s included in the accommodation?
+            </summary>
+            <div class="faq-answer">
+              <p>
+                Accommodation includes a premium penthouse / mansion base in El Poblado,
+                with social and lifestyle amenities (pool, jacuzzi, sauna/steam, social areas).
+              </p>
+              <p>
+                The base is part of the training system — not just a place to sleep.
+              </p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">
+              What do I pay for separately?
+            </summary>
+            <div class="faq-answer">
+              <p>
+                Flights, meals, personal expenses, and dates are not included.
+                Optional add-ons (private driver, enhanced security, premium dining,
+                photo/video day) are discussed after application approval.
+              </p>
+              <p>
+                We keep pricing transparent so there are no surprises.
+              </p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">
+              What about dates and logistics?
+            </summary>
+            <div class="faq-answer">
+              <p>
+                Dates are part of the training.
+                You’ll learn how to plan, lead, and manage logistics cleanly —
+                from venue selection to pacing and decision-making.
+              </p>
+              <p>
+                Costs related to dates themselves (drinks, food, transport)
+                are handled by you, as they would be anywhere in the world.
+              </p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">
+              Visa and travel basics?
+            </summary>
+            <div class="faq-answer">
+              <p>
+                Most travelers from North America and Europe can enter Colombia
+                without a visa for short stays. You’re responsible for your own travel documents.
+              </p>
+              <p>
+                We provide guidance after acceptance, but always verify requirements
+                based on your passport.
+              </p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">
+              What is the refund or reschedule policy?
+            </summary>
+            <div class="faq-answer">
+              <p>
+                Due to the limited spots and logistics involved,
+                <strong>payments are generally non-refundable</strong>.
+              </p>
+              <p>
+                In some cases, rescheduling to a future immersion may be possible
+                if requested well in advance and subject to availability.
+                Details are discussed clearly during the application process.
+              </p>
+            </div>
+          </details>
+
         </div>
 
-        <div class="section-cta">
-          <a class="btn btn-primary" href="#apply">Apply</a>
+        <div class="faq__cta">
+          <a class="btn btn-primary" href="#apply">Apply Now</a>
+          <a class="btn btn-secondary" href="#whatsapp">Ask via WhatsApp</a>
         </div>
+
       </div>
     </section>
 
-    <!-- =========================
-         Final CTA
-    ========================== -->
-    <section class="final-cta" aria-label="Final call to action">
-      <div class="container">
-        <div class="final-cta-inner">
-          <h2>Ready for a real identity upgrade?</h2>
-          <p>
-            If you want execution, standards, and transformation — apply now.
-            Limited Spots to keep the environment high-performance.
-          </p>
-          <div class="final-cta-actions">
-            <a class="btn btn-primary" href="#apply">Apply Now</a>
-            <a class="btn btn-secondary" href="#top">Back to Top</a>
-          </div>
-        </div>
-      </div>
-    </section>
+
+
 
   </main>
 

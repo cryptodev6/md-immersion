@@ -1,0 +1,172 @@
+/* =========================
+  15) PACKAGES & OPTIONS
+========================= */
+
+.packages{
+  position: relative;
+  padding: clamp(64px, 8vw, 110px) 0;
+  background:
+    radial-gradient(900px 520px at 20% 0%, rgba(212,175,55,.14), rgba(0,0,0,0) 60%),
+    radial-gradient(900px 520px at 80% 10%, rgba(212,175,55,.10), rgba(0,0,0,0) 60%),
+    linear-gradient(180deg, rgba(6,6,8,1) 0%, rgba(8,8,10,1) 100%);
+}
+
+.packages__header{
+  max-width: 920px;
+  margin: 0 auto 22px auto;
+}
+
+.packages__title{
+  margin: 10px 0 10px 0;
+  font-size: clamp(28px, 3vw, 44px);
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+}
+
+.packages__lede{
+  margin: 12px 0 0 0;
+  font-size: clamp(16px, 1.25vw, 18px);
+  line-height: 1.75;
+  color: rgba(255,255,255,.82);
+}
+
+/* Grid */
+.packages__grid{
+  margin-top: 18px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 16px;
+}
+
+.package-card{
+  grid-column: span 6;
+  padding: 20px;
+  border-radius: 20px;
+  background: rgba(255,255,255,.04);
+  border: 1px solid rgba(255,255,255,.08);
+  box-shadow:
+    0 14px 36px rgba(0,0,0,.45),
+    inset 0 1px 0 rgba(255,255,255,.06);
+}
+
+.package-card--featured{
+  border-color: rgba(212,175,55,.34);
+  background:
+    radial-gradient(900px 240px at 20% 0%, rgba(212,175,55,.18), rgba(0,0,0,0) 55%),
+    rgba(255,255,255,.045);
+}
+
+.package-card__header{
+  position: relative;
+}
+
+.package-card__title{
+  margin: 0;
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.package-card__subtitle{
+  margin: 4px 0 0 0;
+  color: rgba(255,255,255,.78);
+  font-size: 14px;
+}
+
+.package-badge{
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 11px;
+  font-weight: 900;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(212,175,55,.95);
+  color: rgba(0,0,0,.88);
+}
+
+.package-card__price{
+  margin: 14px 0;
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+}
+
+.price{
+  font-size: 36px;
+  font-weight: 900;
+  color: rgba(212,175,55,1);
+}
+
+.price-note{
+  font-size: 14px;
+  color: rgba(255,255,255,.70);
+}
+
+.package-card__description{
+  color: rgba(255,255,255,.82);
+  line-height: 1.7;
+  font-size: 14.5px;
+}
+
+.package-list{
+  margin: 14px 0 0 0;
+  padding-left: 18px;
+  color: rgba(255,255,255,.82);
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.package-note{
+  margin-top: 12px;
+  font-size: 13.5px;
+  color: rgba(255,255,255,.72);
+}
+
+.package-card__cta{
+  margin-top: 16px;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+/* Add-ons */
+.packages__addons{
+  margin-top: 22px;
+  padding: 18px 20px;
+  border-radius: 18px;
+  background: rgba(255,255,255,.035);
+  border: 1px solid rgba(255,255,255,.08);
+}
+
+.addons__title{
+  margin: 0 0 8px 0;
+  font-size: 16px;
+  font-weight: 900;
+}
+
+.addons__list{
+  margin: 0;
+  padding-left: 18px;
+  color: rgba(255,255,255,.80);
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.addons__note{
+  margin-top: 8px;
+  font-size: 13.5px;
+  color: rgba(255,255,255,.70);
+}
+
+.packages__bottom-cta{
+  margin-top: 18px;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Responsive */
+@media (max-width: 900px){
+  .package-card{ grid-column: span 12; }
+}
