@@ -1,0 +1,306 @@
+/* =========================
+  10) CURRICULUM (TABS + ACCORDION)
+========================= */
+
+.curriculum{
+  position: relative;
+  padding: clamp(64px, 8vw, 110px) 0;
+  background:
+    radial-gradient(900px 520px at 20% 0%, rgba(212,175,55,.12), rgba(0,0,0,0) 60%),
+    radial-gradient(900px 520px at 80% 10%, rgba(212,175,55,.10), rgba(0,0,0,0) 60%),
+    linear-gradient(180deg, rgba(6,6,8,1) 0%, rgba(8,8,10,1) 100%);
+  overflow: hidden;
+}
+
+.curriculum__header{
+  max-width: 920px;
+  margin: 0 auto 22px auto;
+}
+
+.curriculum__title{
+  margin: 10px 0 10px 0;
+  font-size: clamp(28px, 3vw, 44px);
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+}
+
+.curriculum__lede{
+  margin: 12px 0 0 0;
+  font-size: clamp(16px, 1.25vw, 18px);
+  line-height: 1.75;
+  color: rgba(255,255,255,.82);
+}
+
+.curriculum__cta{
+  margin-top: 18px;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+/* Tabs layout */
+.curriculum-tabs{
+  margin-top: 18px;
+}
+
+.curriculum-tabs__nav{
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.tab{
+  grid-column: span 2;
+  text-align: left;
+  border-radius: 16px;
+  padding: 12px 12px;
+  background: rgba(255,255,255,.04);
+  border: 1px solid rgba(255,255,255,.08);
+  color: rgba(255,255,255,.86);
+  cursor: pointer;
+  transition: transform .18s ease, border-color .18s ease, background .18s ease;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.tab:hover{
+  transform: translateY(-1px);
+  border-color: rgba(212,175,55,.22);
+  background: rgba(255,255,255,.05);
+}
+
+.tab.is-active{
+  border-color: rgba(212,175,55,.34);
+  background:
+    radial-gradient(500px 140px at 20% 0%, rgba(212,175,55,.18), rgba(0,0,0,0) 60%),
+    rgba(255,255,255,.05);
+}
+
+.tab__num{
+  font-weight: 800;
+  font-size: 12px;
+  color: rgba(0,0,0,.86);
+  background: rgba(212,175,55,.95);
+  border-radius: 999px;
+  padding: 6px 8px;
+  letter-spacing: .02em;
+  flex: 0 0 auto;
+}
+
+.tab__label{
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: .01em;
+}
+
+.tab__tag{
+  margin-left: auto;
+  font-size: 11px;
+  font-weight: 800;
+  padding: 4px 8px;
+  border-radius: 999px;
+  background: rgba(212,175,55,.16);
+  border: 1px solid rgba(212,175,55,.26);
+  color: rgba(255,255,255,.88);
+}
+
+.tab--gold .tab__num{
+  background: rgba(255,255,255,.92);
+  color: rgba(0,0,0,.88);
+}
+
+/* Panels */
+.curriculum-tabs__panels{
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,.10);
+  background: rgba(255,255,255,.03);
+  box-shadow: 0 18px 46px rgba(0,0,0,.50);
+}
+
+.panel{
+  display: none;
+  padding: 18px;
+}
+
+.panel.is-active{ display: block; }
+
+.panel__grid{
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 14px;
+  align-items: stretch;
+}
+
+.panel__copy{ grid-column: span 7; }
+.panel__media{ grid-column: span 5; margin: 0; border-radius: 18px; overflow: hidden; border: 1px solid rgba(255,255,255,.08); background: rgba(0,0,0,.25); }
+
+.panel__media img{
+  width: 100%;
+  height: 100%;
+  min-height: 320px;
+  object-fit: cover;
+  display: block;
+}
+
+.panel__media figcaption{
+  padding: 10px 12px;
+  font-size: 13px;
+  color: rgba(255,255,255,.82);
+  border-top: 1px solid rgba(255,255,255,.08);
+  background: rgba(0,0,0,.18);
+}
+
+.panel__kicker{
+  margin: 0 0 6px 0;
+  color: rgba(255,255,255,.82);
+  font-size: 13px;
+}
+
+.panel__title{
+  margin: 0 0 10px 0;
+  font-size: 22px;
+  letter-spacing: -0.01em;
+}
+
+.panel__text{
+  margin: 0;
+  color: rgba(255,255,255,.80);
+  line-height: 1.75;
+}
+
+.panel__bullets{
+  margin: 12px 0 0 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 8px;
+  color: rgba(255,255,255,.78);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.panel__bullets li{
+  position: relative;
+  padding-left: 18px;
+}
+
+.panel__bullets li::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: .55em;
+  width: 7px;
+  height: 7px;
+  border-radius: 99px;
+  background: rgba(212,175,55,.85);
+  box-shadow: 0 0 0 3px rgba(212,175,55,.12);
+}
+
+.panel__note{
+  margin-top: 12px;
+  padding: 12px 14px;
+  border-radius: 16px;
+  background: rgba(255,255,255,.035);
+  border: 1px solid rgba(255,255,255,.08);
+  color: rgba(255,255,255,.84);
+  line-height: 1.6;
+}
+
+.panel__tag{
+  margin-left: 8px;
+  font-size: 11px;
+  font-weight: 800;
+  padding: 4px 8px;
+  border-radius: 999px;
+  background: rgba(212,175,55,.95);
+  color: rgba(0,0,0,.88);
+}
+
+/* Accordion (mobile) */
+.curriculum-acc{
+  display: none;
+  margin-top: 12px;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,.10);
+  background: rgba(255,255,255,.03);
+}
+
+.curriculum-acc__sum{
+  list-style: none;
+  cursor: pointer;
+  padding: 14px 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-bottom: 1px solid rgba(255,255,255,.08);
+}
+
+.curriculum-acc__sum::-webkit-details-marker{ display: none; }
+
+.curriculum-acc__num{
+  font-weight: 800;
+  font-size: 12px;
+  color: rgba(0,0,0,.86);
+  background: rgba(212,175,55,.95);
+  border-radius: 999px;
+  padding: 6px 8px;
+  letter-spacing: .02em;
+}
+
+.curriculum-acc__label{
+  font-weight: 800;
+  letter-spacing: .01em;
+}
+
+.curriculum-acc__tag{
+  margin-left: auto;
+  font-size: 11px;
+  font-weight: 800;
+  padding: 4px 8px;
+  border-radius: 999px;
+  background: rgba(212,175,55,.16);
+  border: 1px solid rgba(212,175,55,.26);
+  color: rgba(255,255,255,.88);
+}
+
+.curriculum-acc__sum--gold .curriculum-acc__num{
+  background: rgba(255,255,255,.92);
+  color: rgba(0,0,0,.88);
+}
+
+.curriculum-acc__body{
+  padding: 12px 14px 14px 14px;
+  color: rgba(255,255,255,.80);
+  line-height: 1.7;
+  font-size: 14px;
+}
+
+.curriculum-acc__body ul{
+  margin: 10px 0 0 0;
+  padding-left: 18px;
+}
+
+.curriculum__bottom-cta{
+  margin-top: 16px;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+/* Responsive rules */
+@media (max-width: 980px){
+  .tab{ grid-column: span 4; }
+  .panel__copy{ grid-column: span 12; }
+  .panel__media{ grid-column: span 12; }
+  .panel__media img{ min-height: 260px; }
+}
+
+@media (max-width: 720px){
+  .curriculum-tabs{ display: none; }
+  .curriculum-acc{ display: block; }
+}
