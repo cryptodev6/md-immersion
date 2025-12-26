@@ -1,0 +1,122 @@
+/* =========================
+   Problem (Simple / Readable)
+   No cards, no glass, no grid traps
+========================= */
+
+.problem-simple{
+  padding: 72px 20px;
+}
+
+.problem-simple__inner{
+  max-width: 860px;   /* readable line length */
+  margin: 0 auto;
+}
+
+.problem-simple__title{
+  margin: 0 0 10px;
+  font-size: clamp(1.8rem, 2.7vw, 2.4rem);
+  line-height: 1.15;
+  color: rgba(255,255,255,0.94);
+}
+
+.problem-simple__lede{
+  margin: 0 0 18px;
+  font-size: 1.05rem;
+  line-height: 1.65;
+  color: rgba(255,255,255,0.74);
+  max-width: 75ch;
+}
+
+.problem-simple__h3{
+  margin: 18px 0 10px;
+  font-size: 1.15rem;
+  color: rgba(255,255,255,0.92);
+}
+
+.problem-simple__p{
+  margin: 0 0 12px;
+  font-size: 1.02rem;
+  line-height: 1.7;
+  color: rgba(255,255,255,0.72);
+  max-width: 80ch;
+}
+
+/* Media row: clean, not dominant */
+.problem-simple__media{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin: 18px 0 8px;
+}
+
+.problem-simple__media figure{
+  margin: 0;
+}
+
+.problem-simple__media img{
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 16px;
+  border: 1px solid rgba(255,255,255,0.10);
+  display: block;
+}
+
+.problem-simple__media figcaption{
+  margin-top: 8px;
+  color: rgba(255,255,255,0.58);
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+@media (max-width: 780px){
+  .problem-simple__media{ grid-template-columns: 1fr; }
+  .problem-simple__media img{ height: 200px; }
+}
+
+/* Normal list (no weird grid inside li) */
+.problem-simple__list{
+  margin: 0 0 12px;
+  padding-left: 18px;
+  color: rgba(255,255,255,0.72);
+  line-height: 1.7;
+}
+
+.problem-simple__list li{
+  margin: 8px 0;
+}
+
+.problem-simple__list strong{
+  color: rgba(255,255,255,0.92);
+  font-weight: 800;
+}
+
+/* CTA */
+.problem-simple__cta{
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 16px;
+}
+
+.problem-simple__link{
+  color: rgba(242,218,155,0.92);
+  font-weight: 850;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(215,184,108,0.45);
+  padding-bottom: 2px;
+}
+
+.problem-simple__link:hover{
+  border-bottom-color: rgba(215,184,108,0.80);
+}
+
+/* emphasis helpers */
+.gold{ color: rgba(242,218,155,0.92); }
+.underline{
+  text-decoration: underline;
+  text-decoration-color: rgba(215,184,108,0.55);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+}
