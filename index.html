@@ -50,6 +50,7 @@
   <link rel="stylesheet" href="assets/css/program.css" />
   <link rel="stylesheet" href="assets/css/what-you-get.css" />
   <link rel="stylesheet" href="assets/css/city-advantage.css" />
+  <link rel="stylesheet" href="assets/css/mansion.css" />
 
   <!-- =========================
        Structured Data (JSON-LD)
@@ -154,7 +155,7 @@
       <!-- Background Media -->
       <div class="hero-media" aria-hidden="true">
         <video class="hero-video" autoplay muted loop playsinline poster="assets/images/hero/hero-poster.jpg">
-          <source src="assets/video/hero.mp4" type="video/mp4" />
+          <source src="assets/video/mansion.mp4" type="video/mp4" />
         </video>
         <div class="hero-overlay"></div>
         <div class="hero-vignette"></div>
@@ -846,157 +847,168 @@
     </section>
 
 
-
     <!-- =========================
-         The Experience (What’s Included / Not Included)
-    ========================== -->
-    <section class="experience" id="experience" aria-label="Experience details">
-      <div class="container">
-        <header class="section-header">
-          <h2>What you get (and what you don’t)</h2>
-          <p>
-            Clear boundaries. High standards. A premium coaching immersion built to develop you — not sell fantasies.
+      9) THE BASE (PENTHOUSE / MANSION)
+    ========================= -->
+    <section class="base" id="mansion" aria-label="The Base: Penthouse / Mansion Experience">
+      <div class="container base__inner">
+
+        <header class="base__header">
+          <p class="kicker">
+            <span class="k-dot" aria-hidden="true"></span>
+            The Base
           </p>
+
+          <h2 class="base__title">
+            You’re not commuting to a course —
+            <span class="gold"><strong>you live the immersion.</strong></span>
+          </h2>
+
+          <p class="base__lede">
+            The base is a major lever. A premium penthouse / mansion in <span class="gold"><strong>El Poblado</strong></span>
+            means cleaner logistics, higher standards, and a lifestyle environment that forces you to level up.
+            This isn’t “nice accommodation.” It’s part of the training system.
+          </p>
+
+          <div class="base__cta">
+            <a class="btn btn-primary" href="#apply">Apply for Medellín Immersion</a>
+            <a class="btn btn-secondary" href="#program">See the training system</a>
+          </div>
         </header>
 
-        <div class="two-col">
-          <div class="col">
-            <h3>Included</h3>
-            <ul class="checklist">
-              <li>Structured coaching system (brief → field → debrief)</li>
-              <li>Daygame + nightgame execution blocks</li>
-              <li>Social circle training & positioning</li>
-              <li>Online game framework (profiles, messaging, conversion)</li>
-              <li>Fitness & presence coaching (immersion-friendly)</li>
-              <li>Group accountability + standards</li>
-              <li>Premium base operations</li>
-            </ul>
-          </div>
+        <!-- VIDEO (KEY SALES LEVER) -->
+        <div class="base__video" aria-label="Mansion video">
+          <div class="base-video glass-card">
+            <!-- Replace src with your video / embed (YouTube/Vimeo/self-hosted) -->
+            <video class="base-video__el" controls playsinline preload="metadata"
+              poster="assets/images/mansion/mansion-video-poster.jpg">
+              <source src="assets/video/mansion.mp4" type="video/mp4" />
+            </video>
 
-          <div class="col">
-            <h3>Not included</h3>
-            <ul class="xlist">
-              <li>Anything illegal or disrespectful</li>
-              <li>“Guaranteed” outcomes or promises</li>
-              <li>Escort services, prostitution, or anything related</li>
-              <li>Anything that encourages objectification or coercion</li>
-              <li>Open-ended partying without structure</li>
-            </ul>
-
-            <div class="policy-note">
-              <h4>Respect & legality policy</h4>
-              <p>
-                This immersion is strictly focused on social competence, confidence, and personal development.
-                Participants must follow respectful conduct standards at all times.
-              </p>
+            <!-- Optional: if you prefer an embed instead of <video>, swap the block above for:
+            <div class="base-video__embed">
+              <iframe src="https://player.vimeo.com/video/XXXXXXXX"
+                title="Mansion Tour Video" frameborder="0"
+                allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            -->
+            <div class="base-video__caption">
+              <span class="gold"><strong>Watch the base tour.</strong></span>
+              This is the environment you live in — the standard becomes automatic.
             </div>
           </div>
         </div>
 
-        <div class="section-cta">
-          <a class="btn btn-primary" href="#apply">Apply Now</a>
-          <a class="btn btn-secondary" href="#safety">Read Safety Standards</a>
+        <!-- PHOTO STRIP (VISUAL) -->
+        <div class="base__gallery" aria-label="Mansion photos">
+          <figure class="base-shot">
+            <img src="assets/images/mansion/base-01.jpg" alt="Premium penthouse living area designed for social momentum" loading="lazy">
+          </figure>
+          <figure class="base-shot">
+            <img src="assets/images/mansion/base-02.jpg" alt="Luxury amenities: pool and relaxation areas" loading="lazy">
+          </figure>
+          <figure class="base-shot">
+            <img src="assets/images/mansion/base-03.jpg" alt="Party zone and social areas inside the base" loading="lazy">
+          </figure>
+          <figure class="base-shot">
+            <img src="assets/images/mansion/base-04.jpg" alt="Night view from the base in El Poblado" loading="lazy">
+          </figure>
         </div>
-      </div>
-    </section>
 
-    <!-- =========================
-         Mansion / Base ()
-    ========================== -->
-    <section class="mansion" id="mansion" aria-label=" Medellín">
-      <div class="container">
-        <header class="section-header">
-          <h2>Mansion Medellín (change this)</h2>
-          <p>
-            A premium base designed for high performance: comfort, privacy, security standards, and the right environment.
-          </p>
-        </header>
+        <!-- CONTENT GRID -->
+        <div class="base__grid" aria-label="Why the base matters">
 
-        <div class="mansion-grid">
-          <div class="mansion-media">
-            <figure class="media-card">
-              <img src="assets/images/mansion/volcano-house-01.jpg" alt="Medellín exterior" loading="lazy" />
-            </figure>
-            <figure class="media-card">
-              <img src="assets/images/mansion/volcano-house-02.jpg" alt=" Medellín interior" loading="lazy" />
-            </figure>
-          </div>
-
-          <div class="mansion-content">
-            <h3>Why the base matters</h3>
-            <p>
-              Your environment dictates your state. This HQ is built to keep you sharp, focused, and confident.
+          <!-- Amenities -->
+          <article class="base-card base-card--amenities">
+            <h3 class="base-card__title">Amenities that create momentum</h3>
+            <p class="base-card__text">
+              This base is designed for lifestyle and social energy — recovery, preparation, hosting, and high standards.
+              You train better when your environment supports you.
             </p>
-            <ul class="bullets">
-              <li>Premium comfort to recover and execute daily</li>
-              <li>Controlled, safe operations</li>
-              <li>High-level vibe that upgrades your identity</li>
-              <li>Media-ready spaces for brand / lifestyle content</li>
-            </ul>
 
-            <div class="section-cta">
-              <a class="btn btn-primary" href="#apply">Apply for  Spots</a>
-              <a class="btn btn-secondary" href="#gallery">Explore Gallery</a>
+            <div class="amenities" role="list" aria-label="Amenities grid">
+              <div class="amenity" role="listitem">
+                <span class="amenity__dot" aria-hidden="true"></span>
+                Heated pool
+              </div>
+              <div class="amenity" role="listitem">
+                <span class="amenity__dot" aria-hidden="true"></span>
+                Jacuzzi
+              </div>
+              <div class="amenity" role="listitem">
+                <span class="amenity__dot" aria-hidden="true"></span>
+                Sauna
+              </div>
+              <div class="amenity" role="listitem">
+                <span class="amenity__dot" aria-hidden="true"></span>
+                Steam room
+              </div>
+              <div class="amenity" role="listitem">
+                <span class="amenity__dot" aria-hidden="true"></span>
+                Party / social zone
+              </div>
+              <div class="amenity" role="listitem">
+                <span class="amenity__dot" aria-hidden="true"></span>
+                Billiards & games
+              </div>
+              <div class="amenity" role="listitem">
+                <span class="amenity__dot" aria-hidden="true"></span>
+                Lounge & recovery areas
+              </div>
+              <div class="amenity" role="listitem">
+                <span class="amenity__dot" aria-hidden="true"></span>
+                Premium social spaces
+              </div>
             </div>
-          </div>
+
+            <p class="base-card__note">
+              Exact amenities vary by base selection — but the standard remains: <span class="gold"><strong>premium</strong></span>.
+            </p>
+          </article>
+
+          <!-- Location -->
+          <article class="base-card">
+            <h3 class="base-card__title">El Poblado location advantage</h3>
+            <p class="base-card__text">
+              You’re based in Medellín’s premium zone. That means cleaner logistics, better venues, and less friction —
+              you’re minutes away from the best social rooms, dining, and nightlife.
+            </p>
+
+            <ul class="base-bullets">
+              <li>Less commuting → more execution</li>
+              <li>Better venues → higher standards</li>
+              <li>Cleaner logistics → smoother nights</li>
+            </ul>
+          </article>
+
+          <!-- Lifestyle lever -->
+          <article class="base-card base-card--featured">
+            <h3 class="base-card__title">Lifestyle is part of the training</h3>
+            <p class="base-card__text">
+              When you live in a high-standard environment, you start moving differently.
+              You build momentum faster, you recover better, and your identity upgrades without forcing it.
+            </p>
+
+            <div class="base-pull">
+              <strong>Not a hotel.</strong> A controlled environment designed to build
+              <span class="gold"><strong>confidence, presence, and social leadership.</strong></span>
+            </div>
+          </article>
+
         </div>
+
+        <div class="base__bottom-cta">
+          <a class="btn btn-primary" href="#apply">Apply Now</a>
+          <a class="btn btn-secondary" href="#faq">Read FAQs</a>
+        </div>
+
       </div>
     </section>
 
-    <!-- =========================
-         Sample Schedule
-    ========================== -->
-    <section class="schedule" id="schedule" aria-label="Sample weekly schedule">
-      <div class="container">
-        <header class="section-header">
-          <h2>Sample week structure</h2>
-          <p>Rhythm matters. The week is designed to compound confidence through repetition and feedback.</p>
-        </header>
 
-        <div class="schedule-grid">
-          <article class="day-card">
-            <h3>Morning</h3>
-            <ul class="bullets">
-              <li>Briefing: goals + drills</li>
-              <li>Fitness / presence session</li>
-              <li>Preparation & calibration</li>
-            </ul>
-          </article>
 
-          <article class="day-card">
-            <h3>Afternoon</h3>
-            <ul class="bullets">
-              <li>Field execution block (daygame)</li>
-              <li>Live feedback</li>
-              <li>Break + reset</li>
-            </ul>
-          </article>
 
-          <article class="day-card">
-            <h3>Evening</h3>
-            <ul class="bullets">
-              <li>Debrief + learning extraction</li>
-              <li>Social circle / online game session</li>
-              <li>Night execution (selected nights)</li>
-            </ul>
-          </article>
 
-          <article class="day-card">
-            <h3>Weekly focus</h3>
-            <ul class="bullets">
-              <li>Identity upgrade protocols</li>
-              <li>Style & lifestyle tuning</li>
-              <li>Accountability + standards</li>
-            </ul>
-          </article>
-        </div>
-
-        <div class="section-cta">
-          <a class="btn btn-primary" href="#pricing">See Options</a>
-          <a class="btn btn-secondary" href="#apply">Apply</a>
-        </div>
-      </div>
-    </section>
 
     <!-- =========================
          Testimonials (Placeholders)
