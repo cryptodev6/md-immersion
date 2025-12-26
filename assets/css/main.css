@@ -249,84 +249,148 @@ h4{
   width: 100%;
 }
 
+
 /* =========================
-   5) Header / Nav
+   HEADER
 ========================= */
+
 .site-header{
-  position: sticky;
+  position: fixed;
   top: 0;
-  z-index: 999;
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  background: rgba(7,8,10,0.65);
-  border-bottom: 1px solid rgba(255,255,255,0.08);
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: rgba(5,5,7,.78);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(255,255,255,.06);
 }
 
-.header-inner{
-  display: grid;
-  grid-template-columns: auto 1fr auto auto;
-  gap: 14px;
+.header-container{
+  height: 72px;
+  display: flex;
   align-items: center;
-  padding: 14px 0;
+  justify-content: space-between;
+  gap: 18px;
 }
 
+/* Brand */
 .brand img{
-  filter: drop-shadow(0 12px 22px rgba(0,0,0,0.35));
+  display: block;
+  height: auto;
 }
 
-.site-nav .nav-list{
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  gap: 16px;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.site-nav a{
-  color: var(--text-2);
-  font-weight: 600;
-  padding: 10px 10px;
-  border-radius: 999px;
-  transition: background .18s var(--ease), color .18s var(--ease), border-color .18s var(--ease);
-  border: 1px solid transparent;
-}
-
-.site-nav a:hover{
-  color: var(--text);
-  background: rgba(255,255,255,0.05);
-  border-color: rgba(215,184,108,0.18);
-}
-
-.header-cta{
-  display: flex;
-  justify-content: flex-end;
-}
-
-.nav-toggle{
+/* Desktop Nav */
+.site-nav{
   display: none;
-  width: 44px;
-  height: 44px;
-  border-radius: 12px;
-  border: 1px solid rgba(255,255,255,0.12);
-  background: rgba(255,255,255,0.04);
-  padding: 10px;
+}
+
+.nav-list{
+  display: flex;
+  gap: 26px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-list a{
+  font-size: 14px;
+  font-weight: 600;
+  color: rgba(255,255,255,.82);
+  text-decoration: none;
+  transition: color .2s ease;
+}
+
+.nav-list a:hover{
+  color: #d4af37;
+}
+
+/* CTA */
+.header-cta{
+  display: none;
+}
+
+.btn-sm{
+  padding: 9px 18px;
+  font-size: 13.5px;
+}
+
+/* Toggle */
+.nav-toggle{
+  background: none;
+  border: none;
+  width: 28px;
+  height: 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   cursor: pointer;
 }
+
 .nav-toggle span{
-  display: block;
   height: 2px;
-  background: rgba(255,255,255,0.82);
-  margin: 6px 0;
+  width: 100%;
+  background: #fff;
   border-radius: 2px;
 }
 
-/* Mobile nav open state helper (toggled by JS) */
-body.nav-open .site-nav{
-  display: block;
+/* Mobile Nav */
+.mobile-nav{
+  position: fixed;
+  inset: 72px 0 auto 0;
+  background: rgba(5,5,7,.98);
+  transform: translateY(-110%);
+  transition: transform .35s ease;
 }
+
+.mobile-nav.is-open{
+  transform: translateY(0);
+}
+
+.mobile-nav-list{
+  list-style: none;
+  padding: 22px;
+  margin: 0;
+  display: grid;
+  gap: 18px;
+}
+
+.mobile-nav-list a{
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+}
+
+.mobile-cta{
+  margin-top: 14px;
+}
+
+/* Desktop breakpoint */
+@media (min-width: 960px){
+  .site-nav{
+    display: block;
+  }
+
+  .header-cta{
+    display: block;
+  }
+
+  .nav-toggle{
+    display: none;
+  }
+
+  .mobile-nav{
+    display: none;
+  }
+}
+
+/* Push content below fixed header */
+main{
+  padding-top: 72px;
+}
+
+
+
 
 /* =========================
    6) Sections (Spacing)
@@ -1204,4 +1268,9 @@ textarea:focus{
   .header-cta .btn{
     width: 100%;
   }
+}
+
+
+#schedule {
+  display: none;
 }
