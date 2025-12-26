@@ -202,3 +202,36 @@
     height: 21px;
   }
 }
+/* Mini bullets inside overview cards (program-style specificity) */
+.get-mini{
+  margin: 12px 0 0 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 8px;
+  color: rgba(255,255,255,.78);
+  font-size: 13.5px;
+  line-height: 1.55;
+}
+
+.get-mini li{
+  position: relative;
+  padding-left: 18px;
+}
+
+.get-mini li::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: .55em;
+  width: 7px;
+  height: 7px;
+  border-radius: 99px;
+  background: rgba(212,175,55,.85);
+  box-shadow: 0 0 0 3px rgba(212,175,55,.12);
+}
+
+.get-mini--featured li::before{
+  background: rgba(0,0,0,.88);
+  box-shadow: 0 0 0 3px rgba(212,175,55,.25);
+}
