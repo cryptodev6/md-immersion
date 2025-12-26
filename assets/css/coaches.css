@@ -1,0 +1,300 @@
+/* =========================
+  12) COACHES & LEADERSHIP
+========================= */
+
+.coaches{
+  position: relative;
+  padding: clamp(64px, 8vw, 110px) 0;
+  background:
+    radial-gradient(900px 520px at 20% 0%, rgba(212,175,55,.12), rgba(0,0,0,0) 60%),
+    radial-gradient(900px 520px at 80% 10%, rgba(212,175,55,.10), rgba(0,0,0,0) 60%),
+    linear-gradient(180deg, rgba(8,8,10,1) 0%, rgba(6,6,8,1) 100%);
+  overflow: hidden;
+}
+
+.coaches__header{
+  max-width: 920px;
+  margin: 0 auto 22px auto;
+}
+
+.coaches__title{
+  margin: 10px 0 10px 0;
+  font-size: clamp(28px, 3vw, 44px);
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+}
+
+.coaches__lede{
+  margin: 12px 0 0 0;
+  font-size: clamp(16px, 1.25vw, 18px);
+  line-height: 1.75;
+  color: rgba(255,255,255,.82);
+}
+
+/* Grid */
+.coaches__grid{
+  margin-top: 18px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 14px;
+}
+
+.coach-card{
+  grid-column: span 4;
+  padding: 18px 18px 16px 18px;
+  border-radius: 18px;
+  background: rgba(255,255,255,.04);
+  border: 1px solid rgba(255,255,255,.08);
+  box-shadow:
+    0 10px 26px rgba(0,0,0,.35),
+    inset 0 1px 0 rgba(255,255,255,.06);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  transition: transform .18s ease, border-color .18s ease, background .18s ease;
+}
+
+.coach-card:hover{
+  transform: translateY(-2px);
+  border-color: rgba(212,175,55,.26);
+  background: rgba(255,255,255,.05);
+}
+
+.coach-card--featured{
+  grid-column: span 12;
+  border-color: rgba(212,175,55,.34);
+  background:
+    radial-gradient(900px 220px at 20% 0%, rgba(212,175,55,.18), rgba(0,0,0,0) 55%),
+    rgba(255,255,255,.045);
+}
+
+.coach-card--gold{
+  border-color: rgba(212,175,55,.22);
+  background: rgba(255,255,255,.045);
+}
+
+.coach-card__top{
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.coach-avatar{
+  width: 58px;
+  height: 58px;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,.10);
+  background: rgba(0,0,0,.25);
+  flex: 0 0 auto;
+}
+
+.coach-avatar img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.coach-head{
+  display: grid;
+  gap: 2px;
+  min-width: 0;
+}
+
+.coach-name{
+  margin: 0;
+  font-size: 16px;
+  font-weight: 900;
+  letter-spacing: .01em;
+}
+
+.coach-role{
+  margin: 0;
+  color: rgba(255,255,255,.78);
+  font-size: 13.5px;
+  line-height: 1.35;
+}
+
+.coach-tag{
+  margin-left: 8px;
+  font-size: 11px;
+  font-weight: 900;
+  padding: 4px 8px;
+  border-radius: 999px;
+  background: rgba(212,175,55,.95);
+  color: rgba(0,0,0,.88);
+}
+
+.coach-badge{
+  margin-left: auto;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: .02em;
+  padding: 8px 10px;
+  border-radius: 999px;
+  color: rgba(0,0,0,.88);
+  background: rgba(212,175,55,.95);
+  flex: 0 0 auto;
+}
+
+.coach-body{
+  margin-top: 12px;
+}
+
+.coach-text{
+  margin: 0;
+  color: rgba(255,255,255,.80);
+  font-size: 14.5px;
+  line-height: 1.7;
+}
+
+/* Quote */
+.coach-quote{
+  margin-top: 12px;
+  padding: 12px 14px;
+  border-radius: 16px;
+  background: rgba(0,0,0,.24);
+  border: 1px solid rgba(255,255,255,.08);
+  color: rgba(255,255,255,.88);
+  line-height: 1.6;
+}
+
+/* Points */
+.coach-points{
+  margin: 12px 0 0 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 8px;
+  color: rgba(255,255,255,.78);
+  font-size: 13.5px;
+  line-height: 1.55;
+}
+
+.coach-points li{
+  position: relative;
+  padding-left: 18px;
+}
+
+.coach-points li::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: .55em;
+  width: 7px;
+  height: 7px;
+  border-radius: 99px;
+  background: rgba(212,175,55,.85);
+  box-shadow: 0 0 0 3px rgba(212,175,55,.12);
+}
+
+/* Bottom row */
+.coaches__bottom{
+  margin-top: 16px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 14px;
+  align-items: stretch;
+}
+
+.philosophy{
+  grid-column: span 5;
+  padding: 18px;
+  border-radius: 18px;
+}
+
+.philosophy__title,
+.standards__title{
+  margin: 0 0 8px 0;
+  font-size: 16px;
+  font-weight: 900;
+  letter-spacing: .01em;
+}
+
+.philosophy__text{
+  margin: 0;
+  color: rgba(255,255,255,.80);
+  line-height: 1.7;
+  font-size: 14.5px;
+}
+
+.philosophy__pill{
+  margin-top: 12px;
+  padding: 12px 14px;
+  border-radius: 16px;
+  background: rgba(212,175,55,.14);
+  border: 1px solid rgba(212,175,55,.22);
+  color: rgba(255,255,255,.88);
+  line-height: 1.6;
+}
+
+.philosophy__pill-sub{
+  display: block;
+  margin-top: 6px;
+  color: rgba(255,255,255,.78);
+  font-weight: 500;
+  font-size: 13.5px;
+}
+
+/* Standards */
+.standards{
+  grid-column: span 7;
+  padding: 18px;
+  border-radius: 18px;
+}
+
+.standards__cols{
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.standards__label{
+  margin: 0 0 8px 0;
+  font-weight: 900;
+  color: rgba(255,255,255,.88);
+}
+
+.standards__list{
+  margin: 0;
+  padding-left: 18px;
+  color: rgba(255,255,255,.80);
+  line-height: 1.7;
+  font-size: 14px;
+}
+
+.standards__list--muted{
+  color: rgba(255,255,255,.70);
+}
+
+.standards__cta{
+  margin-top: 14px;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+/* Reuse your existing glass-card style if present */
+.glass-card{
+  background: rgba(255,255,255,.04);
+  border: 1px solid rgba(255,255,255,.08);
+  box-shadow:
+    0 10px 26px rgba(0,0,0,.35),
+    inset 0 1px 0 rgba(255,255,255,.06);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+/* Responsive */
+@media (max-width: 980px){
+  .coach-card{ grid-column: span 12; }
+  .philosophy{ grid-column: span 12; }
+  .standards{ grid-column: span 12; }
+}
+
+@media (max-width: 620px){
+  .standards__cols{ grid-template-columns: 1fr; }
+  .coach-avatar{ width: 54px; height: 54px; border-radius: 14px; }
+  .coach-badge{ display: none; }
+}

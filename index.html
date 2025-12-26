@@ -52,6 +52,8 @@
   <link rel="stylesheet" href="assets/css/city-advantage.css" />
   <link rel="stylesheet" href="assets/css/mansion.css" />
   <link rel="stylesheet" href="assets/css/curriculum.css" />
+  <link rel="stylesheet" href="assets/css/typical-week.css" />
+  <link rel="stylesheet" href="assets/css/coaches.css" />
 
   <!-- =========================
        Structured Data (JSON-LD)
@@ -1007,347 +1009,707 @@
     </section>
 
 
-<!-- =========================
-  10) CURRICULUM (HOW IT WORKS)
-  Tabs (desktop) + Accordion (mobile)
-========================= -->
-<section class="curriculum" id="curriculum" aria-label="Curriculum breakdown">
-  <div class="container curriculum__inner">
+    <!-- =========================
+      10) CURRICULUM (HOW IT WORKS)
+      Tabs (desktop) + Accordion (mobile)
+    ========================= -->
+    <section class="curriculum" id="curriculum" aria-label="Curriculum breakdown">
+      <div class="container curriculum__inner">
 
-    <header class="curriculum__header">
+        <header class="curriculum__header">
+          <p class="kicker">
+            <span class="k-dot" aria-hidden="true"></span>
+            Curriculum System
+          </p>
+
+          <h2 class="curriculum__title">
+            How it works:
+            <span class="gold"><strong>6 phases</strong></span> that build real-world skill
+          </h2>
+
+          <p class="curriculum__lede">
+            This isn’t random “going out.” Medellín Immersion is structured into phases so you always know
+            what to train, what to improve, and what to execute next — powered by the daily loop:
+            <span class="underline"><strong>Brief → Execute → Debrief</strong></span>.
+          </p>
+
+          <div class="curriculum__cta">
+            <a class="btn btn-primary" href="#apply">Apply for Medellín Immersion</a>
+            <a class="btn btn-secondary" href="#what-you-get">See what’s included</a>
+          </div>
+        </header>
+
+        <!-- Tabs -->
+        <div class="curriculum-tabs" data-tabs aria-label="Curriculum phases">
+          <div class="curriculum-tabs__nav" role="tablist" aria-label="Curriculum phase tabs">
+
+            <button class="tab is-active" role="tab" aria-selected="true" aria-controls="phase-1" id="tab-1" data-tab="phase-1">
+              <span class="tab__num">01</span>
+              <span class="tab__label">Foundation</span>
+            </button>
+
+            <button class="tab" role="tab" aria-selected="false" aria-controls="phase-2" id="tab-2" data-tab="phase-2">
+              <span class="tab__num">02</span>
+              <span class="tab__label">Execution</span>
+            </button>
+
+            <button class="tab" role="tab" aria-selected="false" aria-controls="phase-3" id="tab-3" data-tab="phase-3">
+              <span class="tab__num">03</span>
+              <span class="tab__label">Night</span>
+            </button>
+
+            <button class="tab" role="tab" aria-selected="false" aria-controls="phase-4" id="tab-4" data-tab="phase-4">
+              <span class="tab__num">04</span>
+              <span class="tab__label">Online</span>
+            </button>
+
+            <button class="tab" role="tab" aria-selected="false" aria-controls="phase-5" id="tab-5" data-tab="phase-5">
+              <span class="tab__num">05</span>
+              <span class="tab__label">Dates</span>
+            </button>
+
+            <button class="tab tab--gold" role="tab" aria-selected="false" aria-controls="phase-6" id="tab-6" data-tab="phase-6">
+              <span class="tab__num">06</span>
+              <span class="tab__label">Social Circle</span>
+              <span class="tab__tag">2.0</span>
+            </button>
+
+          </div>
+
+          <div class="curriculum-tabs__panels">
+
+            <!-- Phase 1 -->
+            <article class="panel is-active" id="phase-1" role="tabpanel" tabindex="0" aria-labelledby="tab-1">
+              <div class="panel__grid">
+                <div class="panel__copy">
+                  <p class="panel__kicker"><span class="gold"><strong>Phase 1</strong></span> — Foundation</p>
+                  <h3 class="panel__title">Build the baseline: vibe, frame, fundamentals</h3>
+                  <p class="panel__text">
+                    We build the fundamentals that make everything else work: how you move, how you speak,
+                    and how you lead social moments without trying too hard. This phase sets your standard.
+                  </p>
+                  <ul class="panel__bullets">
+                    <li>Body language, posture, voice, and calm presence</li>
+                    <li>Openers, conversation flow, and social intuition</li>
+                    <li>Frame control: leading without chasing</li>
+                    <li>Standards: who you are inside the environment</li>
+                  </ul>
+
+                  <div class="panel__note">
+                    <strong>Goal:</strong> you stop overthinking and start moving like a man who belongs.
+                  </div>
+                </div>
+
+                <figure class="panel__media">
+                  <img src="assets/images/curriculum/phase-1-foundation.jpg" alt="Foundation phase: presence, body language, and frame" loading="lazy">
+                  <figcaption>Foundation first — your vibe becomes your advantage.</figcaption>
+                </figure>
+              </div>
+            </article>
+
+            <!-- Phase 2 -->
+            <article class="panel" id="phase-2" role="tabpanel" tabindex="0" aria-labelledby="tab-2">
+              <div class="panel__grid">
+                <div class="panel__copy">
+                  <p class="panel__kicker"><span class="gold"><strong>Phase 2</strong></span> — Execution</p>
+                  <h3 class="panel__title">Daily daygame reps + the feedback loop</h3>
+                  <p class="panel__text">
+                    Volume builds confidence. Calibration makes it sharp.
+                    You’ll execute daygame daily with targets and drills — then we debrief and correct.
+                  </p>
+                  <ul class="panel__bullets">
+                    <li>Approach mechanics and momentum under pressure</li>
+                    <li>Conversation leadership, attraction, and escalation basics</li>
+                    <li>Handling resistance and staying grounded</li>
+                    <li><span class="underline"><strong>Brief → Execute → Debrief</strong></span> every day</li>
+                  </ul>
+
+                  <div class="panel__note">
+                    <strong>Goal:</strong> approaching becomes normal — not a mental battle.
+                  </div>
+                </div>
+
+                <figure class="panel__media">
+                  <img src="assets/images/curriculum/phase-2-execution.jpg" alt="Execution phase: daygame reps and coaching calibration" loading="lazy">
+                  <figcaption>Daily reps + daily calibration = fast growth.</figcaption>
+                </figure>
+              </div>
+            </article>
+
+            <!-- Phase 3 -->
+            <article class="panel" id="phase-3" role="tabpanel" tabindex="0" aria-labelledby="tab-3">
+              <div class="panel__grid">
+                <div class="panel__copy">
+                  <p class="panel__kicker"><span class="gold"><strong>Phase 3</strong></span> — Night</p>
+                  <h3 class="panel__title">Venues, groups, and high-energy social dynamics</h3>
+                  <p class="panel__text">
+                    Nightgame is different: faster pace, more social pressure, more group dynamics.
+                    This phase teaches you how to navigate and lead high-energy rooms with composure.
+                  </p>
+                  <ul class="panel__bullets">
+                    <li>Venue navigation and positioning</li>
+                    <li>Group dynamics, social intelligence, and leadership</li>
+                    <li>Escalation and decision-making in fast environments</li>
+                    <li>Maintaining frame when the room is loud</li>
+                  </ul>
+
+                  <div class="panel__note">
+                    <strong>Goal:</strong> you become the man who moves the room — not the man who watches.
+                  </div>
+                </div>
+
+                <figure class="panel__media">
+                  <img src="assets/images/curriculum/phase-3-night.jpg" alt="Night phase: elite venues, group dynamics, and leadership" loading="lazy">
+                  <figcaption>Nightgame trains composure + leadership in real rooms.</figcaption>
+                </figure>
+              </div>
+            </article>
+
+            <!-- Phase 4 -->
+            <article class="panel" id="phase-4" role="tabpanel" tabindex="0" aria-labelledby="tab-4">
+              <div class="panel__grid">
+                <div class="panel__copy">
+                  <p class="panel__kicker"><span class="gold"><strong>Phase 4</strong></span> — Online</p>
+                  <h3 class="panel__title">Profile optimization, texting, funnels, logistics</h3>
+                  <p class="panel__text">
+                    Online game becomes effortless when you have a system.
+                    We optimize your profile and build messaging flows that move women from DM to real life cleanly.
+                  </p>
+                  <ul class="panel__bullets">
+                    <li>Profile strategy: photos, bio, positioning</li>
+                    <li>Messaging frameworks that convert</li>
+                    <li>Funnels and bridging online → offline</li>
+                    <li>Logistics planning to reduce flake</li>
+                  </ul>
+
+                  <div class="panel__note">
+                    <strong>Goal:</strong> you create options even when you’re not out.
+                  </div>
+                </div>
+
+                <figure class="panel__media">
+                  <img src="assets/images/curriculum/phase-4-online.jpg" alt="Online phase: dating apps, Instagram, messaging funnels" loading="lazy">
+                  <figcaption>Online becomes a system — not chaos.</figcaption>
+                </figure>
+              </div>
+            </article>
+
+            <!-- Phase 5 -->
+            <article class="panel" id="phase-5" role="tabpanel" tabindex="0" aria-labelledby="tab-5">
+              <div class="panel__grid">
+                <div class="panel__copy">
+                  <p class="panel__kicker"><span class="gold"><strong>Phase 5</strong></span> — Dates</p>
+                  <h3 class="panel__title">Planning, leading, intimacy, consistency</h3>
+                  <p class="panel__text">
+                    The difference between “getting numbers” and real outcomes is leadership.
+                    This phase teaches you how to structure dates, lead transitions, and build consistency.
+                  </p>
+                  <ul class="panel__bullets">
+                    <li>Date structure: venues, pacing, and flow</li>
+                    <li>Escalation and decision-making without hesitation</li>
+                    <li>Logistics that turn momentum into outcomes</li>
+                    <li>Consistency: moving from random wins to repeatable results</li>
+                  </ul>
+
+                  <div class="panel__note">
+                    <strong>Goal:</strong> you lead calmly — and women feel it.
+                  </div>
+                </div>
+
+                <figure class="panel__media">
+                  <img src="assets/images/curriculum/phase-5-dates.jpg" alt="Dates phase: leading, logistics, and consistency" loading="lazy">
+                  <figcaption>Dates are where leadership becomes real.</figcaption>
+                </figure>
+              </div>
+            </article>
+
+            <!-- Phase 6 -->
+            <article class="panel" id="phase-6" role="tabpanel" tabindex="0" aria-labelledby="tab-6">
+              <div class="panel__grid">
+                <div class="panel__copy">
+                  <p class="panel__kicker"><span class="gold"><strong>Phase 6</strong></span> — Social Circle Mastery <span class="panel__tag">2.0 Upgrade</span></p>
+                  <h3 class="panel__title">Build leverage: become the node</h3>
+                  <p class="panel__text">
+                    Cold approach is power — but social circle is leverage.
+                    You’ll learn how to create invitations, build connections, host, and integrate so your lifestyle compounds.
+                  </p>
+                  <ul class="panel__bullets">
+                    <li>Connection building and social positioning</li>
+                    <li>Hosting, invitations, and momentum creation</li>
+                    <li>Integration: how to enter groups naturally</li>
+                    <li>Becoming “the node” — the connector people want around</li>
+                  </ul>
+
+                  <div class="panel__note">
+                    <strong>Goal:</strong> you stop depending on randomness — and start generating access.
+                  </div>
+                </div>
+
+                <figure class="panel__media">
+                  <img src="assets/images/curriculum/phase-6-social-circle.jpg" alt="Social circle mastery: hosting, networking, becoming the connector" loading="lazy">
+                  <figcaption>Social circle builds leverage that compounds.</figcaption>
+                </figure>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+        <!-- Mobile accordion (same content, simplified) -->
+        <details class="curriculum-acc" open>
+          <summary class="curriculum-acc__sum">
+            <span class="curriculum-acc__num">01</span>
+            <span class="curriculum-acc__label">Foundation</span>
+          </summary>
+          <div class="curriculum-acc__body">
+            <p>Fundamentals: body language, presence, vibe, openers, frame.</p>
+            <ul>
+              <li>Posture, voice, calm presence</li>
+              <li>Conversation flow & social intuition</li>
+              <li>Frame: leading without chasing</li>
+            </ul>
+          </div>
+        </details>
+
+        <details class="curriculum-acc">
+          <summary class="curriculum-acc__sum">
+            <span class="curriculum-acc__num">02</span>
+            <span class="curriculum-acc__label">Execution</span>
+          </summary>
+          <div class="curriculum-acc__body">
+            <p>Daily daygame reps + feedback loops.</p>
+            <ul>
+              <li>Targets, drills, calibration</li>
+              <li>Brief → Execute → Debrief daily</li>
+              <li>Confidence through volume</li>
+            </ul>
+          </div>
+        </details>
+
+        <details class="curriculum-acc">
+          <summary class="curriculum-acc__sum">
+            <span class="curriculum-acc__num">03</span>
+            <span class="curriculum-acc__label">Night</span>
+          </summary>
+          <div class="curriculum-acc__body">
+            <p>Venues, groups, social navigation, escalation.</p>
+            <ul>
+              <li>Positioning & venue navigation</li>
+              <li>Group dynamics & leadership</li>
+              <li>Escalation under pressure</li>
+            </ul>
+          </div>
+        </details>
+
+        <details class="curriculum-acc">
+          <summary class="curriculum-acc__sum">
+            <span class="curriculum-acc__num">04</span>
+            <span class="curriculum-acc__label">Online</span>
+          </summary>
+          <div class="curriculum-acc__body">
+            <p>Profile optimization, texting, funnels, logistics.</p>
+            <ul>
+              <li>Profile + photo structure</li>
+              <li>Message flows that convert</li>
+              <li>Online → offline bridging</li>
+            </ul>
+          </div>
+        </details>
+
+        <details class="curriculum-acc">
+          <summary class="curriculum-acc__sum">
+            <span class="curriculum-acc__num">05</span>
+            <span class="curriculum-acc__label">Dates</span>
+          </summary>
+          <div class="curriculum-acc__body">
+            <p>Planning, leading, intimacy, consistency.</p>
+            <ul>
+              <li>Date structure & venue selection</li>
+              <li>Escalation + decision-making</li>
+              <li>Consistency & repeatable results</li>
+            </ul>
+          </div>
+        </details>
+
+        <details class="curriculum-acc">
+          <summary class="curriculum-acc__sum curriculum-acc__sum--gold">
+            <span class="curriculum-acc__num">06</span>
+            <span class="curriculum-acc__label">Social Circle Mastery</span>
+            <span class="curriculum-acc__tag">2.0</span>
+          </summary>
+          <div class="curriculum-acc__body">
+            <p>Building connections, hosting, leverage, becoming “the node”.</p>
+            <ul>
+              <li>Hosting, invites, momentum</li>
+              <li>Integration into groups</li>
+              <li>Become the connector</li>
+            </ul>
+          </div>
+        </details>
+
+        <div class="curriculum__bottom-cta">
+          <a class="btn btn-primary" href="#apply">Apply Now</a>
+          <a class="btn btn-secondary" href="#schedule">View a typical week</a>
+        </div>
+
+      </div>
+    </section>
+
+
+<!-- =========================
+  11) A TYPICAL WEEK (SCHEDULE VISUAL)
+========================= -->
+<section class="schedule" id="schedule" aria-label="A typical week">
+  <div class="container schedule__inner">
+
+    <header class="schedule__header">
       <p class="kicker">
         <span class="k-dot" aria-hidden="true"></span>
-        Curriculum System
+        A Typical Week
       </p>
 
-      <h2 class="curriculum__title">
-        How it works:
-        <span class="gold"><strong>6 phases</strong></span> that build real-world skill
+      <h2 class="schedule__title">
+        The rhythm that creates results:
+        <span class="gold"><strong>structure + reps + feedback</strong></span>
       </h2>
 
-      <p class="curriculum__lede">
-        This isn’t random “going out.” Medellín Immersion is structured into phases so you always know
-        what to train, what to improve, and what to execute next — powered by the daily loop:
-        <span class="underline"><strong>Brief → Execute → Debrief</strong></span>.
+      <p class="schedule__lede">
+        You’re not guessing what to do each day. The schedule is engineered around execution —
+        with a consistent daily loop and specific nights reserved for elite venues and curated socials.
       </p>
 
-      <div class="curriculum__cta">
+      <div class="schedule__cta">
         <a class="btn btn-primary" href="#apply">Apply for Medellín Immersion</a>
-        <a class="btn btn-secondary" href="#what-you-get">See what’s included</a>
+        <a class="btn btn-secondary" href="#curriculum">See the 6-phase system</a>
       </div>
     </header>
 
-    <!-- Tabs -->
-    <div class="curriculum-tabs" data-tabs aria-label="Curriculum phases">
-      <div class="curriculum-tabs__nav" role="tablist" aria-label="Curriculum phase tabs">
+    <!-- Schedule Visual -->
+    <div class="schedule__grid" aria-label="Daily rhythm">
+      <article class="slot">
+        <div class="slot__top">
+          <div class="slot__icon" aria-hidden="true">
+            <!-- Sunrise -->
+            <svg viewBox="0 0 24 24" fill="none">
+              <path d="M6 18a6 6 0 0 1 12 0" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+              <path d="M12 5V2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+              <path d="M4 12H2M22 12h-2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" opacity=".9"/>
+              <path d="M5 7 3.6 5.6M19 7l1.4-1.4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" opacity=".9"/>
+              <path d="M3 18h18" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" opacity=".8"/>
+            </svg>
+          </div>
+          <h3 class="slot__title">Morning</h3>
+          <span class="slot__time">Fitness + Prep</span>
+        </div>
+        <p class="slot__text">
+          Energy and presence first. Train your physique, clean your mind, and lock the day’s objective
+          before you step into the field.
+        </p>
+        <ul class="slot__bullets">
+          <li>Fitness / routine (energy + recovery)</li>
+          <li>Mindset & standards check</li>
+          <li>Briefing: what you’ll execute today</li>
+        </ul>
+      </article>
 
-        <button class="tab is-active" role="tab" aria-selected="true" aria-controls="phase-1" id="tab-1" data-tab="phase-1">
-          <span class="tab__num">01</span>
-          <span class="tab__label">Foundation</span>
-        </button>
+      <article class="slot">
+        <div class="slot__top">
+          <div class="slot__icon" aria-hidden="true">
+            <!-- Sun -->
+            <svg viewBox="0 0 24 24" fill="none">
+              <path d="M12 18a6 6 0 1 0-6-6 6 6 0 0 0 6 6Z" stroke="currentColor" stroke-width="1.6"/>
+              <path d="M12 2v2M12 20v2M4 12H2M22 12h-2M5 5l1.4 1.4M17.6 17.6 19 19M19 5l-1.4 1.4M5 19l1.4-1.4"
+                stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 class="slot__title">Afternoon</h3>
+          <span class="slot__time">Daygame Execution</span>
+        </div>
+        <p class="slot__text">
+          High-volume reps in real environments. You approach, lead, and calibrate — then repeat.
+          Confidence becomes normal through volume and feedback.
+        </p>
+        <ul class="slot__bullets">
+          <li>Approach reps + momentum</li>
+          <li>Conversation leadership & attraction</li>
+          <li>Calibrated corrections in real time</li>
+        </ul>
+      </article>
 
-        <button class="tab" role="tab" aria-selected="false" aria-controls="phase-2" id="tab-2" data-tab="phase-2">
-          <span class="tab__num">02</span>
-          <span class="tab__label">Execution</span>
-        </button>
+      <article class="slot">
+        <div class="slot__top">
+          <div class="slot__icon" aria-hidden="true">
+            <!-- Screen -->
+            <svg viewBox="0 0 24 24" fill="none">
+              <path d="M4 5h16a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2Z"
+                stroke="currentColor" stroke-width="1.6"/>
+              <path d="M8 22h8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+              <path d="M12 18v4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 class="slot__title">Evening</h3>
+          <span class="slot__time">Debrief + Online Game</span>
+        </div>
+        <p class="slot__text">
+          This is where growth locks in. We review the day, correct patterns, and build your online funnel
+          so you’re creating options beyond the streets.
+        </p>
+        <ul class="slot__bullets">
+          <li>Debrief: what worked / what didn’t</li>
+          <li>Messaging flows + logistics planning</li>
+          <li>Profile optimization (Tinder/IG)</li>
+        </ul>
+      </article>
 
-        <button class="tab" role="tab" aria-selected="false" aria-controls="phase-3" id="tab-3" data-tab="phase-3">
-          <span class="tab__num">03</span>
-          <span class="tab__label">Night</span>
-        </button>
+      <article class="slot slot--night">
+        <div class="slot__top">
+          <div class="slot__icon" aria-hidden="true">
+            <!-- Moon -->
+            <svg viewBox="0 0 24 24" fill="none">
+              <path d="M21 13.5A8.5 8.5 0 0 1 10.5 3 7 7 0 1 0 21 13.5Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3 class="slot__title">Night</h3>
+          <span class="slot__time">Elite Venues (Certain Days)</span>
+        </div>
+        <p class="slot__text">
+          Nightgame runs on selected nights to keep performance high.
+          You train social dynamics, groups, and leadership in high-energy rooms — with structure.
+        </p>
+        <ul class="slot__bullets">
+          <li>Venue navigation & positioning</li>
+          <li>Group dynamics + social leadership</li>
+          <li>Escalation under real pressure</li>
+        </ul>
+        <p class="slot__hint">
+          <strong>Note:</strong> Nights are scheduled strategically to preserve energy and maximize results.
+        </p>
+      </article>
 
-        <button class="tab" role="tab" aria-selected="false" aria-controls="phase-4" id="tab-4" data-tab="phase-4">
-          <span class="tab__num">04</span>
-          <span class="tab__label">Online</span>
-        </button>
+      <article class="slot slot--featured">
+        <div class="slot__top">
+          <div class="slot__icon" aria-hidden="true">
+            <!-- Spark / network -->
+            <svg viewBox="0 0 24 24" fill="none">
+              <path d="M12 2l1.2 4.4L18 8l-4.8 1.6L12 14l-1.2-4.4L6 8l4.8-1.6L12 2Z"
+                stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+              <path d="M7 15.5c2.2 1.8 7.8 1.8 10 0" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" opacity=".85"/>
+              <path d="M9 18.5c1.4 1 4.6 1 6 0" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" opacity=".7"/>
+            </svg>
+          </div>
+          <h3 class="slot__title">Social Momentum</h3>
+          <span class="slot__time">Parties / Curated Socials</span>
+        </div>
+        <p class="slot__text">
+          Social circle isn’t optional — it’s leverage. Curated socials are used as training environments:
+          integration, hosting, invitations, and becoming the connector.
+        </p>
+        <ul class="slot__bullets">
+          <li>Hosting & social leadership</li>
+          <li>Network building that compounds</li>
+          <li>Higher-standard rooms & invitations</li>
+        </ul>
+        <div class="slot__tag">2.0 Upgrade</div>
+      </article>
+    </div>
 
-        <button class="tab" role="tab" aria-selected="false" aria-controls="phase-5" id="tab-5" data-tab="phase-5">
-          <span class="tab__num">05</span>
-          <span class="tab__label">Dates</span>
-        </button>
-
-        <button class="tab tab--gold" role="tab" aria-selected="false" aria-controls="phase-6" id="tab-6" data-tab="phase-6">
-          <span class="tab__num">06</span>
-          <span class="tab__label">Social Circle</span>
-          <span class="tab__tag">2.0</span>
-        </button>
-
+    <!-- Weekly strip (optional visual) -->
+    <div class="schedule__week" aria-label="Weekly cadence">
+      <div class="week-card">
+        <p class="week-card__title">Weekly Cadence</p>
+        <p class="week-card__text">
+          Most days follow the same execution rhythm. Selected nights and curated socials are scheduled
+          strategically — especially during <span class="gold"><strong>Feria de las Flores</strong></span> and
+          <span class="gold"><strong>Colombiamoda</strong></span> — to maximize momentum and keep performance high.
+        </p>
       </div>
 
-      <div class="curriculum-tabs__panels">
-
-        <!-- Phase 1 -->
-        <article class="panel is-active" id="phase-1" role="tabpanel" tabindex="0" aria-labelledby="tab-1">
-          <div class="panel__grid">
-            <div class="panel__copy">
-              <p class="panel__kicker"><span class="gold"><strong>Phase 1</strong></span> — Foundation</p>
-              <h3 class="panel__title">Build the baseline: vibe, frame, fundamentals</h3>
-              <p class="panel__text">
-                We build the fundamentals that make everything else work: how you move, how you speak,
-                and how you lead social moments without trying too hard. This phase sets your standard.
-              </p>
-              <ul class="panel__bullets">
-                <li>Body language, posture, voice, and calm presence</li>
-                <li>Openers, conversation flow, and social intuition</li>
-                <li>Frame control: leading without chasing</li>
-                <li>Standards: who you are inside the environment</li>
-              </ul>
-
-              <div class="panel__note">
-                <strong>Goal:</strong> you stop overthinking and start moving like a man who belongs.
-              </div>
-            </div>
-
-            <figure class="panel__media">
-              <img src="assets/images/curriculum/phase-1-foundation.jpg" alt="Foundation phase: presence, body language, and frame" loading="lazy">
-              <figcaption>Foundation first — your vibe becomes your advantage.</figcaption>
-            </figure>
-          </div>
-        </article>
-
-        <!-- Phase 2 -->
-        <article class="panel" id="phase-2" role="tabpanel" tabindex="0" aria-labelledby="tab-2">
-          <div class="panel__grid">
-            <div class="panel__copy">
-              <p class="panel__kicker"><span class="gold"><strong>Phase 2</strong></span> — Execution</p>
-              <h3 class="panel__title">Daily daygame reps + the feedback loop</h3>
-              <p class="panel__text">
-                Volume builds confidence. Calibration makes it sharp.
-                You’ll execute daygame daily with targets and drills — then we debrief and correct.
-              </p>
-              <ul class="panel__bullets">
-                <li>Approach mechanics and momentum under pressure</li>
-                <li>Conversation leadership, attraction, and escalation basics</li>
-                <li>Handling resistance and staying grounded</li>
-                <li><span class="underline"><strong>Brief → Execute → Debrief</strong></span> every day</li>
-              </ul>
-
-              <div class="panel__note">
-                <strong>Goal:</strong> approaching becomes normal — not a mental battle.
-              </div>
-            </div>
-
-            <figure class="panel__media">
-              <img src="assets/images/curriculum/phase-2-execution.jpg" alt="Execution phase: daygame reps and coaching calibration" loading="lazy">
-              <figcaption>Daily reps + daily calibration = fast growth.</figcaption>
-            </figure>
-          </div>
-        </article>
-
-        <!-- Phase 3 -->
-        <article class="panel" id="phase-3" role="tabpanel" tabindex="0" aria-labelledby="tab-3">
-          <div class="panel__grid">
-            <div class="panel__copy">
-              <p class="panel__kicker"><span class="gold"><strong>Phase 3</strong></span> — Night</p>
-              <h3 class="panel__title">Venues, groups, and high-energy social dynamics</h3>
-              <p class="panel__text">
-                Nightgame is different: faster pace, more social pressure, more group dynamics.
-                This phase teaches you how to navigate and lead high-energy rooms with composure.
-              </p>
-              <ul class="panel__bullets">
-                <li>Venue navigation and positioning</li>
-                <li>Group dynamics, social intelligence, and leadership</li>
-                <li>Escalation and decision-making in fast environments</li>
-                <li>Maintaining frame when the room is loud</li>
-              </ul>
-
-              <div class="panel__note">
-                <strong>Goal:</strong> you become the man who moves the room — not the man who watches.
-              </div>
-            </div>
-
-            <figure class="panel__media">
-              <img src="assets/images/curriculum/phase-3-night.jpg" alt="Night phase: elite venues, group dynamics, and leadership" loading="lazy">
-              <figcaption>Nightgame trains composure + leadership in real rooms.</figcaption>
-            </figure>
-          </div>
-        </article>
-
-        <!-- Phase 4 -->
-        <article class="panel" id="phase-4" role="tabpanel" tabindex="0" aria-labelledby="tab-4">
-          <div class="panel__grid">
-            <div class="panel__copy">
-              <p class="panel__kicker"><span class="gold"><strong>Phase 4</strong></span> — Online</p>
-              <h3 class="panel__title">Profile optimization, texting, funnels, logistics</h3>
-              <p class="panel__text">
-                Online game becomes effortless when you have a system.
-                We optimize your profile and build messaging flows that move women from DM to real life cleanly.
-              </p>
-              <ul class="panel__bullets">
-                <li>Profile strategy: photos, bio, positioning</li>
-                <li>Messaging frameworks that convert</li>
-                <li>Funnels and bridging online → offline</li>
-                <li>Logistics planning to reduce flake</li>
-              </ul>
-
-              <div class="panel__note">
-                <strong>Goal:</strong> you create options even when you’re not out.
-              </div>
-            </div>
-
-            <figure class="panel__media">
-              <img src="assets/images/curriculum/phase-4-online.jpg" alt="Online phase: dating apps, Instagram, messaging funnels" loading="lazy">
-              <figcaption>Online becomes a system — not chaos.</figcaption>
-            </figure>
-          </div>
-        </article>
-
-        <!-- Phase 5 -->
-        <article class="panel" id="phase-5" role="tabpanel" tabindex="0" aria-labelledby="tab-5">
-          <div class="panel__grid">
-            <div class="panel__copy">
-              <p class="panel__kicker"><span class="gold"><strong>Phase 5</strong></span> — Dates</p>
-              <h3 class="panel__title">Planning, leading, intimacy, consistency</h3>
-              <p class="panel__text">
-                The difference between “getting numbers” and real outcomes is leadership.
-                This phase teaches you how to structure dates, lead transitions, and build consistency.
-              </p>
-              <ul class="panel__bullets">
-                <li>Date structure: venues, pacing, and flow</li>
-                <li>Escalation and decision-making without hesitation</li>
-                <li>Logistics that turn momentum into outcomes</li>
-                <li>Consistency: moving from random wins to repeatable results</li>
-              </ul>
-
-              <div class="panel__note">
-                <strong>Goal:</strong> you lead calmly — and women feel it.
-              </div>
-            </div>
-
-            <figure class="panel__media">
-              <img src="assets/images/curriculum/phase-5-dates.jpg" alt="Dates phase: leading, logistics, and consistency" loading="lazy">
-              <figcaption>Dates are where leadership becomes real.</figcaption>
-            </figure>
-          </div>
-        </article>
-
-        <!-- Phase 6 -->
-        <article class="panel" id="phase-6" role="tabpanel" tabindex="0" aria-labelledby="tab-6">
-          <div class="panel__grid">
-            <div class="panel__copy">
-              <p class="panel__kicker"><span class="gold"><strong>Phase 6</strong></span> — Social Circle Mastery <span class="panel__tag">2.0 Upgrade</span></p>
-              <h3 class="panel__title">Build leverage: become the node</h3>
-              <p class="panel__text">
-                Cold approach is power — but social circle is leverage.
-                You’ll learn how to create invitations, build connections, host, and integrate so your lifestyle compounds.
-              </p>
-              <ul class="panel__bullets">
-                <li>Connection building and social positioning</li>
-                <li>Hosting, invitations, and momentum creation</li>
-                <li>Integration: how to enter groups naturally</li>
-                <li>Becoming “the node” — the connector people want around</li>
-              </ul>
-
-              <div class="panel__note">
-                <strong>Goal:</strong> you stop depending on randomness — and start generating access.
-              </div>
-            </div>
-
-            <figure class="panel__media">
-              <img src="assets/images/curriculum/phase-6-social-circle.jpg" alt="Social circle mastery: hosting, networking, becoming the connector" loading="lazy">
-              <figcaption>Social circle builds leverage that compounds.</figcaption>
-            </figure>
-          </div>
-        </article>
-
+      <div class="week-actions">
+        <a class="btn btn-primary" href="#apply">Apply Now</a>
+        <a class="btn btn-secondary" href="#mansion">See the base</a>
       </div>
     </div>
 
-    <!-- Mobile accordion (same content, simplified) -->
-    <details class="curriculum-acc" open>
-      <summary class="curriculum-acc__sum">
-        <span class="curriculum-acc__num">01</span>
-        <span class="curriculum-acc__label">Foundation</span>
-      </summary>
-      <div class="curriculum-acc__body">
-        <p>Fundamentals: body language, presence, vibe, openers, frame.</p>
-        <ul>
-          <li>Posture, voice, calm presence</li>
-          <li>Conversation flow & social intuition</li>
-          <li>Frame: leading without chasing</li>
-        </ul>
-      </div>
-    </details>
+  </div>
+</section>
 
-    <details class="curriculum-acc">
-      <summary class="curriculum-acc__sum">
-        <span class="curriculum-acc__num">02</span>
-        <span class="curriculum-acc__label">Execution</span>
-      </summary>
-      <div class="curriculum-acc__body">
-        <p>Daily daygame reps + feedback loops.</p>
-        <ul>
-          <li>Targets, drills, calibration</li>
-          <li>Brief → Execute → Debrief daily</li>
-          <li>Confidence through volume</li>
-        </ul>
-      </div>
-    </details>
 
-    <details class="curriculum-acc">
-      <summary class="curriculum-acc__sum">
-        <span class="curriculum-acc__num">03</span>
-        <span class="curriculum-acc__label">Night</span>
-      </summary>
-      <div class="curriculum-acc__body">
-        <p>Venues, groups, social navigation, escalation.</p>
-        <ul>
-          <li>Positioning & venue navigation</li>
-          <li>Group dynamics & leadership</li>
-          <li>Escalation under pressure</li>
-        </ul>
-      </div>
-    </details>
+<!-- =========================
+  12) COACHES & LEADERSHIP (AUTHORITY)
+========================= -->
+<section class="coaches" id="coaches" aria-label="Coaches and leadership">
+  <div class="container coaches__inner">
 
-    <details class="curriculum-acc">
-      <summary class="curriculum-acc__sum">
-        <span class="curriculum-acc__num">04</span>
-        <span class="curriculum-acc__label">Online</span>
-      </summary>
-      <div class="curriculum-acc__body">
-        <p>Profile optimization, texting, funnels, logistics.</p>
-        <ul>
-          <li>Profile + photo structure</li>
-          <li>Message flows that convert</li>
-          <li>Online → offline bridging</li>
-        </ul>
-      </div>
-    </details>
+    <header class="coaches__header">
+      <p class="kicker">
+        <span class="k-dot" aria-hidden="true"></span>
+        Coaches & Leadership
+      </p>
 
-    <details class="curriculum-acc">
-      <summary class="curriculum-acc__sum">
-        <span class="curriculum-acc__num">05</span>
-        <span class="curriculum-acc__label">Dates</span>
-      </summary>
-      <div class="curriculum-acc__body">
-        <p>Planning, leading, intimacy, consistency.</p>
-        <ul>
-          <li>Date structure & venue selection</li>
-          <li>Escalation + decision-making</li>
-          <li>Consistency & repeatable results</li>
-        </ul>
-      </div>
-    </details>
+      <h2 class="coaches__title">
+        Led by experience.
+        Built on <span class="gold"><strong>field results since 2016.</strong></span>
+      </h2>
 
-    <details class="curriculum-acc">
-      <summary class="curriculum-acc__sum curriculum-acc__sum--gold">
-        <span class="curriculum-acc__num">06</span>
-        <span class="curriculum-acc__label">Social Circle Mastery</span>
-        <span class="curriculum-acc__tag">2.0</span>
-      </summary>
-      <div class="curriculum-acc__body">
-        <p>Building connections, hosting, leverage, becoming “the node”.</p>
-        <ul>
-          <li>Hosting, invites, momentum</li>
-          <li>Integration into groups</li>
-          <li>Become the connector</li>
-        </ul>
-      </div>
-    </details>
+      <p class="coaches__lede">
+        Medellín Immersion isn’t run by “content creators.”
+        It’s led by coaches who live this in the real world — with a direct, honest,
+        field-based philosophy that produces change fast.
+      </p>
+    </header>
 
-    <div class="curriculum__bottom-cta">
-      <a class="btn btn-primary" href="#apply">Apply Now</a>
-      <a class="btn btn-secondary" href="#schedule">View a typical week</a>
+    <!-- Coaches Grid -->
+    <div class="coaches__grid" role="list" aria-label="Coaching team">
+
+      <!-- Yoshi -->
+      <article class="coach-card coach-card--featured" role="listitem">
+        <div class="coach-card__top">
+          <div class="coach-avatar">
+            <img src="assets/images/coaches/yoshi.jpg" alt="Yoshi — Founder of Seducción Perú" loading="lazy">
+          </div>
+
+          <div class="coach-head">
+            <h3 class="coach-name">Yoshi</h3>
+            <p class="coach-role">
+              Founder, <span class="gold"><strong>Seducción Perú</strong></span> • Medellín Immersion Lead • Since 2016
+            </p>
+          </div>
+
+          <div class="coach-badge" aria-label="Since 2016 badge">
+            Since 2016
+          </div>
+        </div>
+
+        <div class="coach-body">
+          <p class="coach-text">
+            Yoshi built Seducción Perú and has led Medellín Immersions for years.
+            This program is not an experiment — it’s a <span class="gold"><strong>field-tested system</strong></span>
+            refined through real cohorts, real environments, and real outcomes.
+          </p>
+
+          <div class="coach-quote">
+            <p>
+              <strong>“We don’t sell motivation. We build men through execution.”</strong><br>
+              Brief → Execute → Debrief. Every day. In real environments.
+            </p>
+          </div>
+
+          <ul class="coach-points" aria-label="Yoshi highlights">
+            <li>System built through repeated cohorts since 2016</li>
+            <li>Direct coaching style: honest, corrective, results-driven</li>
+            <li>High standards: environment, behavior, and performance</li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- Kevin -->
+      <article class="coach-card" role="listitem">
+        <div class="coach-card__top">
+          <div class="coach-avatar">
+            <img src="assets/images/coaches/kevin.jpg" alt="Kevin — Daygame Specialist" loading="lazy">
+          </div>
+
+          <div class="coach-head">
+            <h3 class="coach-name">Kevin</h3>
+            <p class="coach-role">Daygame Specialist • Execution & Calibration</p>
+          </div>
+        </div>
+
+        <div class="coach-body">
+          <p class="coach-text">
+            Kevin specializes in daygame execution: approach mechanics, conversation leadership,
+            and the calibration that turns reps into real confidence.
+            The goal is simple — <strong>approach becomes normal</strong>.
+          </p>
+
+          <ul class="coach-points" aria-label="Kevin focus">
+            <li>High-volume reps with structured drills</li>
+            <li>Real-time correction: posture, voice, timing, intent</li>
+            <li>Momentum building: from hesitation to consistency</li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- Miguel D (placeholder for your pseudonym) -->
+      <article class="coach-card coach-card--gold" role="listitem">
+        <div class="coach-card__top">
+          <div class="coach-avatar">
+            <img src="assets/images/coaches/miguel-d.jpg" alt="Miguel D — Social Circle Specialist" loading="lazy">
+          </div>
+
+          <div class="coach-head">
+            <h3 class="coach-name">Miguel D</h3>
+            <p class="coach-role">
+              Social Circle Specialist • Hosting, Access & Leverage
+              <span class="coach-tag">2.0</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="coach-body">
+          <p class="coach-text">
+            Social circle is leverage. Miguel D focuses on the 2.0 upgrade:
+            building connections, integrating into groups, hosting, and becoming
+            <span class="gold"><strong>the node</strong></span> people naturally orbit around.
+          </p>
+
+          <ul class="coach-points" aria-label="Miguel focus">
+            <li>Integration: entering groups naturally and cleanly</li>
+            <li>Hosting & invitations: building momentum through social proof</li>
+            <li>Becoming the connector: access that compounds</li>
+          </ul>
+        </div>
+      </article>
+
+    </div>
+
+    <!-- Coaching Philosophy + Standards -->
+    <div class="coaches__bottom" aria-label="Coaching philosophy and standards">
+
+      <div class="philosophy glass-card">
+        <h3 class="philosophy__title">Coaching philosophy</h3>
+        <p class="philosophy__text">
+          We coach in the field — not from a classroom. The style is direct, honest, and corrective.
+          You’ll get real feedback, real standards, and real expectations.
+        </p>
+
+        <div class="philosophy__pill">
+          <strong>Brief → Execute → Debrief</strong>
+          <span class="philosophy__pill-sub">No fluff. No coping. Just reps + calibration.</span>
+        </div>
+      </div>
+
+      <div class="standards glass-card">
+        <h3 class="standards__title">Standards (who it’s for / who it’s not)</h3>
+
+        <div class="standards__cols">
+          <div class="standards__col">
+            <p class="standards__label">This is for you if:</p>
+            <ul class="standards__list">
+              <li>You want real-world results, not theory</li>
+              <li>You can execute daily and follow structure</li>
+              <li>You respect high standards and professional behavior</li>
+              <li>You want a lifestyle-level transformation</li>
+            </ul>
+          </div>
+
+          <div class="standards__col">
+            <p class="standards__label">This is not for you if:</p>
+            <ul class="standards__list standards__list--muted">
+              <li>You want shortcuts or “magic lines”</li>
+              <li>You can’t handle honest feedback</li>
+              <li>You’re looking for a party trip with no discipline</li>
+              <li>You won’t respect boundaries, ethics, and standards</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="standards__cta">
+          <a class="btn btn-primary" href="#apply">Apply Now</a>
+          <a class="btn btn-secondary" href="#faq">Read FAQs</a>
+        </div>
+      </div>
+
     </div>
 
   </div>
@@ -1355,91 +1717,6 @@
 
 
 
-
-
-    <!-- =========================
-         Testimonials (Placeholders)
-    ========================== -->
-    <section class="testimonials" id="testimonials" aria-label="Testimonials">
-      <div class="container">
-        <header class="section-header">
-          <h2>Client feedback</h2>
-          <p>Replace these with real testimonials (text/video) later.</p>
-        </header>
-
-        <div class="testimonials-grid">
-          <figure class="quote-card">
-            <blockquote>
-              “I stopped overthinking. The structure forced execution — and the debriefs made the learning stick.”
-            </blockquote>
-            <figcaption>
-              <strong>Client A</strong> — 7-day immersion
-            </figcaption>
-          </figure>
-
-          <figure class="quote-card">
-            <blockquote>
-              “The social circle part was the missing piece. It changed how I see status and access.”
-            </blockquote>
-            <figcaption>
-              <strong>Client B</strong> — 2-week immersion
-            </figcaption>
-          </figure>
-
-          <figure class="quote-card">
-            <blockquote>
-              “Premium base, high standards. It felt like an upgrade in identity, not just ‘learning lines’.”
-            </blockquote>
-            <figcaption>
-              <strong>Client C</strong> — 1-month immersion
-            </figcaption>
-          </figure>
-        </div>
-
-        <div class="section-cta">
-          <a class="btn btn-primary" href="#apply">Apply</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- =========================
-         Media / Gallery
-    ========================== -->
-    <section class="gallery" id="gallery" aria-label="Media gallery">
-      <div class="container">
-        <header class="section-header">
-          <h2>Media</h2>
-          <p>
-            You said you have tons of material. This section is built for it: photos, short clips, mansion shots, nightlife, training.
-          </p>
-        </header>
-
-        <div class="gallery-grid">
-          <figure class="gallery-item">
-            <img src="assets/images/gallery/gallery-01.jpg" alt="Training moment in Medellín" loading="lazy" />
-          </figure>
-          <figure class="gallery-item">
-            <img src="assets/images/gallery/gallery-02.jpg" alt=" Medellín atmosphere" loading="lazy" />
-          </figure>
-          <figure class="gallery-item">
-            <img src="assets/images/gallery/gallery-03.jpg" alt="Nightlife environment Medellín" loading="lazy" />
-          </figure>
-          <figure class="gallery-item">
-            <img src="assets/images/gallery/gallery-04.jpg" alt="Social circle experience" loading="lazy" />
-          </figure>
-          <figure class="gallery-item">
-            <img src="assets/images/gallery/gallery-05.jpg" alt="Daygame field training" loading="lazy" />
-          </figure>
-          <figure class="gallery-item">
-            <img src="assets/images/gallery/gallery-06.jpg" alt="Lifestyle and fitness coaching" loading="lazy" />
-          </figure>
-        </div>
-
-        <div class="section-cta">
-          <a class="btn btn-primary" href="#apply">Apply</a>
-        </div>
-      </div>
-    </section>
 
     <!-- =========================
          Pricing / Options
@@ -1499,93 +1776,6 @@
       </div>
     </section>
 
-    <!-- =========================
-         Safety / Standards
-    ========================== -->
-    <section class="safety" id="safety" aria-label="Safety and standards">
-      <div class="container">
-        <header class="section-header">
-          <h2>Safety, respect & standards</h2>
-          <p>Non-negotiable. This protects you, the brand, and the quality of the immersion.</p>
-        </header>
-
-        <div class="safety-grid">
-          <article class="safety-card">
-            <h3>Respect policy</h3>
-            <p>
-              We train communication and social competence. No coercion, no harassment, no “dark” behaviors.
-            </p>
-          </article>
-
-          <article class="safety-card">
-            <h3>Legal boundaries</h3>
-            <p>
-              No illegal services or activities. Any violation results in immediate removal without refund.
-            </p>
-          </article>
-
-          <article class="safety-card">
-            <h3>Situational awareness</h3>
-            <p>
-              Guidance on practical safety habits, environment selection, and staying sharp during the immersion.
-            </p>
-          </article>
-
-          <article class="safety-card">
-            <h3>Quality control</h3>
-            <p>
-              Limited Spots. Fit matters. We keep the environment high-performance and serious.
-            </p>
-          </article>
-        </div>
-
-        <div class="section-cta">
-          <a class="btn btn-primary" href="#apply">Apply</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- =========================
-         Coaches / About
-    ========================== -->
-    <section class="about" id="about" aria-label="About the coaches">
-      <div class="container">
-        <header class="section-header">
-          <h2>About</h2>
-          <p>Replace placeholders with the real team story, credentials, and positioning later.</p>
-        </header>
-
-        <div class="about-grid">
-          <article class="about-card">
-            <img src="assets/images/team/coach-01.jpg" alt="Coach portrait" loading="lazy" />
-            <h3>Lead Coach</h3>
-            <p>
-              Transformation-focused coach. Systems + execution. High standards and real-world calibration.
-            </p>
-          </article>
-
-          <article class="about-card">
-            <img src="assets/images/team/coach-02.jpg" alt="Assistant coach portrait" loading="lazy" />
-            <h3>Assistant Coach</h3>
-            <p>
-              Field support, feedback loops, and logistics. Keeps you moving, sharp, and consistent.
-            </p>
-          </article>
-
-          <article class="about-card">
-            <img src="assets/images/team/ops-01.jpg" alt="Operations portrait" loading="lazy" />
-            <h3>Operations</h3>
-            <p>
-              Premium experience management: base operations, environment selection, and safety standards.
-            </p>
-          </article>
-        </div>
-
-        <div class="section-cta">
-          <a class="btn btn-primary" href="#apply">Apply</a>
-        </div>
-      </div>
-    </section>
 
     <!-- =========================
          Application (Primary Conversion)
